@@ -1,0 +1,327 @@
+# Personal Journal — English
+lang.name = English
+lang.code = en
+
+# ── Application ──────────────────────────────────────────────────────────────
+app.title                   = Personal Journal
+app.err_title               = Error
+app.err_db_init_failed      = Failed to initialise the journal database.
+app.err_auth_failed_title   = Authentication Failed
+app.err_auth_failed         = Incorrect password. {remaining} attempt(s) remaining.
+app.err_locked_out_title    = Locked Out
+app.err_locked_out          = Too many failed attempts. The application will now close.
+
+# ── Menu bar ─────────────────────────────────────────────────────────────────
+menu.file                   = &File
+menu.notes                  = &Notes
+menu.diaries                = &Diaries
+menu.new_note               = &New Note	Ctrl+N
+menu.new_note_help          = Create a new journal note
+menu.new_diary              = New &Diary...	Ctrl+D
+menu.new_diary_help         = Create a new named diary
+menu.goto_date              = &Go to Date...	Ctrl+G
+menu.goto_date_help         = Open a calendar to navigate to a diary entry
+menu.manage_diaries         = &Manage Diaries...	Ctrl+Shift+D
+menu.manage_diaries_help    = Create, rename or delete diaries
+menu.exit                   = E&xit	Alt+F4
+menu.exit_help              = Exit the application
+menu.language               = &Language
+
+# ── Main window ──────────────────────────────────────────────────────────────
+frame.accessible_splitter   = Journal splitter
+frame.label_dates           = &Dates with notes:
+frame.accessible_dates      = Dates with notes
+frame.col_date              = Date
+frame.col_notes_count       = Notes
+frame.label_notes           = N&otes for selected date:
+frame.accessible_notes      = Notes list
+frame.col_subject           = Subject
+frame.col_time              = Time
+frame.label_content         = Note &content:
+frame.accessible_preview    = Note content preview
+frame.tooltip_preview       = Content of the selected note (read-only)
+frame.status_count          = {n} date(s) with notes
+
+# ── Language menu ─────────────────────────────────────────────────────────────
+lang.changed_title          = Language Changed
+lang.changed_msg            = The language has been changed. Reloading the window.
+
+# ── Password setup dialog (first launch) ─────────────────────────────────────
+setup.title                 = Set Master Password
+setup.intro                 = Welcome to Personal Journal.\nPlease choose a master password to encrypt your journal.
+setup.label_password        = &Password:
+setup.label_confirm         = Con&firm:
+setup.accessible_password   = Password
+setup.accessible_confirm    = Confirm Password
+setup.tooltip_password      = Enter your new master password
+setup.tooltip_confirm       = Re-enter your password to confirm
+setup.btn_create            = &Create Journal
+setup.err_validation_title  = Validation Error
+setup.err_too_short         = Password must be at least 4 characters.
+setup.err_no_match          = Passwords do not match. Please try again.
+
+# ── Unlock dialog ─────────────────────────────────────────────────────────────
+unlock.title                = Unlock Personal Journal
+unlock.prompt               = Enter your master password to unlock the journal:
+unlock.label_password       = &Password:
+unlock.accessible_password  = Password
+unlock.tooltip_password     = Enter your master password
+unlock.btn_unlock           = &Unlock
+unlock.btn_exit             = E&xit
+unlock.err_required_title   = Required
+unlock.err_enter_password   = Please enter your password.
+
+# ── New note dialog ───────────────────────────────────────────────────────────
+note.title                  = New Note
+note.label_date             = Date: {date}
+note.label_subject          = &Subject:
+note.label_note             = &Note:
+note.accessible_subject     = Subject
+note.accessible_note        = Note text
+note.tooltip_subject        = Enter a short subject for this note
+note.tooltip_note           = Write your journal entry here
+note.btn_save               = Sa&ve Note
+note.err_required_title     = Required
+note.err_enter_subject      = Please enter a subject for the note.
+note.err_enter_content      = Please enter some text for the note.
+
+# ── Note context menu / edit / delete ────────────────────────────────────────
+note.ctx_edit               = Edit Note
+note.ctx_delete             = Delete Note
+note.edit_title             = Edit Note
+note.edit_btn_save          = Sa&ve Changes
+note.delete_confirm_title   = Delete Note
+note.delete_confirm_msg     = Are you sure you want to delete "{subject}"? This cannot be undone.
+
+# ── Lock screen ───────────────────────────────────────────────────────────────
+menu.search                 = &Search	Ctrl+F
+menu.search_help            = Search notes, alarms and diary entries
+menu.lock                   = &Lock Journal	Ctrl+Alt+L
+menu.lock_help              = Lock the journal and hide its contents
+menu.tray                   = &Hide to System Tray	Alt+Shift+F4
+menu.tray_help              = Lock and hide the journal to the system tray
+lock.status                 = Locked
+lock.message                = The journal is locked.
+lock.btn_unlock             = Unlock Journal
+
+# ── System tray ───────────────────────────────────────────────────────────────
+tray.tooltip                = Personal Journal
+tray.restore                = Restore
+tray.quit                   = Quit
+
+# ── Tabs ──────────────────────────────────────────────────────────────────────
+tab.notes                   = Notes
+tab.alarms                  = Alarms
+tab.diary                   = Diaries
+
+# ── Alarms menu ───────────────────────────────────────────────────────────────
+menu.alarms                 = &Alarms
+menu.new_alarm              = &New Alarm	Ctrl+Shift+N
+menu.new_alarm_help         = Create a new alarm
+
+# ── Alarms list (main window) ─────────────────────────────────────────────────
+frame.label_alarms          = &Alarms:
+frame.accessible_alarms     = Alarms list
+frame.col_alarm_subject     = Subject
+frame.col_alarm_note        = Note
+frame.col_alarm_date        = Date
+frame.col_alarm_time        = Time
+
+# ── New / Edit alarm dialog ───────────────────────────────────────────────────
+alarm.new_title             = New Alarm
+alarm.edit_title            = Edit Alarm
+alarm.label_subject         = &Subject:
+alarm.label_note            = &Note:
+alarm.label_datetime        = &Date and time:
+alarm.accessible_subject    = Subject
+alarm.accessible_note       = Alarm note
+alarm.accessible_date       = Alarm date
+alarm.accessible_hour       = Hour
+alarm.accessible_minute     = Minute
+alarm.tooltip_subject       = Enter a short subject for this alarm
+alarm.tooltip_note          = Enter an optional note for this alarm
+alarm.btn_save              = Sa&ve Alarm
+alarm.edit_btn_save         = Sa&ve Changes
+alarm.err_required_title    = Required
+alarm.err_enter_subject     = Please enter a subject for the alarm.
+alarm.err_past_datetime     = The alarm date and time must be in the future.
+
+# ── Alarm fired dialog ────────────────────────────────────────────────────────
+alarm.fired_title           = Alarm
+alarm.fired_locked_msg      = An alarm is pending.
+alarm.btn_snooze            = &Snooze (Ctrl+Alt+F1)
+alarm.btn_stop              = S&top (Ctrl+Alt+F2)
+alarm.missed_title          = Missed Alarms
+alarm.missed_msg            = {n} alarm(s) were scheduled while the application was closed:
+alarm.missed_list_name      = Missed alarms list
+alarm.missed_col_time       = Scheduled time
+alarm.missed_col_subject    = Subject
+alarm.missed_snooze         = &Snooze All
+alarm.missed_dismiss        = &Dismiss All
+
+# ── Alarm context menu / delete ───────────────────────────────────────────────
+alarm.ctx_edit              = Edit Alarm
+alarm.ctx_delete            = Delete Alarm
+alarm.delete_confirm_title  = Delete Alarm
+alarm.delete_confirm_msg    = Are you sure you want to delete "{subject}"? This cannot be undone.
+
+# ── Diary tab ─────────────────────────────────────────────────────────────────
+diary.label_tree            = Entr&ies:
+diary.accessible_tree       = Diary entries
+diary.label_entry           = Diary &entry:
+diary.accessible_entry      = Diary entry
+diary.tooltip_entry         = Write your diary entry for the selected day (auto-saved)
+diary.default_name          = Diary
+diary.label_selector        = &Diary:
+diary.accessible_selector   = Active diary
+diary.btn_manage            = &Manage...
+diary.btn_manage_tip        = Create, rename or delete diaries
+diary.manage_title          = Manage Diaries
+diary.manage_accessible_list= Diaries
+diary.btn_new_diary         = &New Diary
+diary.btn_rename_diary      = &Rename
+diary.btn_delete_diary      = &Delete
+diary.new_diary_title       = New Diary
+diary.new_diary_label       = Diary &name:
+diary.rename_diary_title    = Rename Diary
+diary.rename_diary_label    = &New name:
+diary.delete_confirm_title  = Delete Diary
+diary.delete_confirm_msg    = Delete "{name}" and all its {n} entries? This cannot be undone.
+diary.delete_confirm_last   = Cannot delete the only diary.
+diary.err_empty_name        = Please enter a name for the diary.
+diary.err_name_title        = Name Required
+diary.btn_goto_date         = &Go to date...
+diary.btn_goto_date_tip     = Open a calendar to navigate to any past date
+diary.goto_title            = Go to Date
+diary.goto_label            = &Select a date to open (today or earlier):
+diary.goto_accessible_cal   = Date picker
+diary.goto_btn_go           = &Go
+diary.goto_err_title        = Invalid Date
+diary.goto_err_future       = Please select today or a past date.
+
+# ── Search ────────────────────────────────────────────────────────────────────
+search.title                = Search
+search.label_query          = &Search for:
+search.accessible_query     = Search term
+search.tooltip_query        = Enter text to search across notes, alarms and diary entries
+search.btn_search           = Sea&rch
+search.accessible_results   = Search results
+search.col_type             = Type
+search.col_title            = Title
+search.col_preview          = Preview
+search.col_date             = Date
+search.type_note            = Note
+search.type_alarm           = Alarm
+search.type_diary           = Diary
+search.results_count        = {n} result(s) found
+search.no_results           = No results found for "{query}"
+search.ctx_goto_diary       = Go to Diary Entry
+
+# ── Export ────────────────────────────────────────────────────────────────────
+menu.export                 = E&xport...	Ctrl+E
+menu.export_help            = Export diary entries or notes to Markdown files
+export.title                = Export
+export.source               = Source
+export.source_diary         = &Diary
+export.source_notes         = &Notes
+export.format               = Export format
+export.fmt_per_entry        = One Pelican post per &entry
+export.fmt_per_week         = One Pelican post per &week
+export.fmt_per_month        = One Pelican post per &month
+export.fmt_single_md        = S&ingle Markdown document (no Pelican header)
+export.metadata             = Pelican metadata
+export.meta_lang            = &Language code:
+export.meta_lang_tip        = ISO 639-1 language code for the Lang field (e.g. en, sr, es)
+export.meta_tags            = &Tags:
+export.meta_tags_tip        = Comma-separated list of tags for the Pelican Tags field
+export.meta_series          = &Series name:
+export.meta_series_tip      = Optional Pelican series name; leave blank to omit Series fields
+export.output_label         = &Output:
+export.output_tip           = Folder for multi-file exports, or file path for single document
+export.btn_browse           = &Browse...
+export.btn_export           = E&xport
+export.browse_folder        = Select export folder
+export.browse_file          = Save Markdown file
+export.template_chk         = &Use custom template file
+export.template_tip         = Template placeholders: {title} {date} {entry_date} {export_time} {modified} {tags} {summary} {description} {series} {series_index} {trans_id} {lang} {content} {diary_name} {year} {month} {day}
+export.template_browse_title= Open Template File
+export.template_default_btn = De&fault...
+export.template_save_title  = Save Default Template
+export.err_title            = Export Error
+export.err_no_output        = Please select an output location.
+export.err_template_read    = Cannot read template file: {error}
+export.err_failed           = Export failed: {error}
+export.success_title        = Export Complete
+export.success_files        = Successfully exported {count} file(s).
+export.success_single       = Successfully exported {count} item(s) to a single file.
+export.all_diaries          = All diaries
+export.fmt_month_title      = {month} {year}
+export.fmt_week_same        = {d1}–{d2} {month} {year}
+export.fmt_week_cross       = {d1} {m1}–{d2} {m2} {year}
+export.fmt_week_cross_year  = {d1} {m1} {y1}–{d2} {m2} {y2}
+
+# ── Backup ────────────────────────────────────────────────────────────────────
+menu.backup                 = &Backup...	Ctrl+Shift+B
+menu.backup_help            = Create a backup of the journal database and settings
+backup.title                = Backup Journal
+backup.info                 = Creates an encrypted backup of all diary entries, notes, alarms, and settings.
+backup.mode_local           = &Local file
+backup.mode_ftp             = &FTP upload
+backup.local_label          = &Save to:
+backup.local_tip            = Folder where the backup file will be saved
+backup.local_browse         = B&rowse...
+backup.local_browse_title   = Select backup folder
+backup.ftp_host             = &Host:
+backup.ftp_port             = &Port:
+backup.ftp_user             = &Username:
+backup.ftp_password         = Pass&word:
+backup.ftp_path             = R&emote path:
+backup.ftp_tls              = &Secure connection (FTPS)
+backup.ftp_remember         = Re&member FTP settings
+backup.ftp_pass_note        = FTP password is stored unencrypted in settings.ini
+backup.btn_backup           = Create &Backup
+backup.err_title            = Backup failed
+backup.err_no_output        = Please select a destination folder.
+backup.err_no_host          = Please enter an FTP host.
+backup.err_no_user          = Please enter an FTP username.
+backup.err_ftp              = FTP error: {error}
+backup.err_write            = Could not write backup file: {error}
+backup.success_title        = Backup complete
+backup.success_local        = Backup saved to:\n{path}
+backup.success_ftp          = Backup uploaded to {host} ({path})
+
+# ── Shortcuts ─────────────────────────────────────────────────────────────────
+menu.shortcuts              = Customize &Shortcuts...
+menu.shortcuts_help         = Edit keyboard shortcuts for menu actions
+shortcuts.title             = Customize Shortcuts
+shortcuts.col_action        = Action
+shortcuts.col_shortcut      = Shortcut
+shortcuts.accessible_list   = Keyboard shortcuts
+shortcuts.btn_reassign      = &Reassign...
+shortcuts.btn_reset         = Reset to &Default
+shortcuts.conflict_title    = Shortcut Conflict
+shortcuts.conflict_msg      = {shortcut} is already assigned to "{action}". Use it anyway?
+shortcuts.capture_title     = New Shortcut
+shortcuts.capture_prompt    = Press the new key combination for:
+shortcuts.capture_hint      = Press a key combination (Ctrl, Alt or Shift + key). Enter to confirm. Esc to cancel.
+
+# ── Date localisation ─────────────────────────────────────────────────────────
+date.month.1                = January
+date.month.2                = February
+date.month.3                = March
+date.month.4                = April
+date.month.5                = May
+date.month.6                = June
+date.month.7                = July
+date.month.8                = August
+date.month.9                = September
+date.month.10               = October
+date.month.11               = November
+date.month.12               = December
+date.weekday.0              = Monday
+date.weekday.1              = Tuesday
+date.weekday.2              = Wednesday
+date.weekday.3              = Thursday
+date.weekday.4              = Friday
+date.weekday.5              = Saturday
+date.weekday.6              = Sunday

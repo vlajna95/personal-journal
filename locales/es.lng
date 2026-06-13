@@ -1,0 +1,327 @@
+# Personal Journal — Español
+lang.name = Español
+lang.code = es
+
+# ── Aplicación ────────────────────────────────────────────────────────────────
+app.title                   = Diario Personal
+app.err_title               = Error
+app.err_db_init_failed      = Error al inicializar la base de datos del diario.
+app.err_auth_failed_title   = Error de autenticación
+app.err_auth_failed         = Contraseña incorrecta. {remaining} intento(s) restante(s).
+app.err_locked_out_title    = Acceso bloqueado
+app.err_locked_out          = Demasiados intentos fallidos. La aplicación se cerrará.
+
+# ── Barra de menú ─────────────────────────────────────────────────────────────
+menu.file                   = &Archivo
+menu.notes                  = &Notas
+menu.diaries                = &Diarios
+menu.new_note               = &Nueva nota	Ctrl+N
+menu.new_note_help          = Crear una nueva nota en el diario
+menu.new_diary              = &Nuevo diario...	Ctrl+D
+menu.new_diary_help         = Crear un nuevo diario con nombre
+menu.goto_date              = &Ir a la fecha...	Ctrl+G
+menu.goto_date_help         = Abrir un calendario para navegar a una entrada del diario
+menu.manage_diaries         = &Administrar diarios...	Ctrl+Shift+D
+menu.manage_diaries_help    = Crear, renombrar o eliminar diarios
+menu.exit                   = &Salir	Alt+F4
+menu.exit_help              = Salir de la aplicación
+menu.language               = &Idioma
+
+# ── Ventana principal ────────────────────────────────────────────────────────
+frame.accessible_splitter   = Divisor del diario
+frame.label_dates           = &Fechas con notas:
+frame.accessible_dates      = Fechas con notas
+frame.col_date              = Fecha
+frame.col_notes_count       = Notas
+frame.label_notes           = &Notas de la fecha seleccionada:
+frame.accessible_notes      = Lista de notas
+frame.col_subject           = Asunto
+frame.col_time              = Hora
+frame.label_content         = &Contenido de la nota:
+frame.accessible_preview    = Vista previa del contenido
+frame.tooltip_preview       = Contenido de la nota seleccionada (solo lectura)
+frame.status_count          = {n} fecha(s) con notas
+
+# ── Menú de idioma ────────────────────────────────────────────────────────────
+lang.changed_title          = Idioma cambiado
+lang.changed_msg            = El idioma ha sido cambiado. Recargando la ventana.
+
+# ── Diálogo de configuración de contraseña (primer inicio) ───────────────────
+setup.title                 = Establecer contraseña maestra
+setup.intro                 = Bienvenido a Diario Personal.\nPor favor, elige una contraseña maestra para cifrar tu diario.
+setup.label_password        = &Contraseña:
+setup.label_confirm         = Con&firmar:
+setup.accessible_password   = Contraseña
+setup.accessible_confirm    = Confirmar contraseña
+setup.tooltip_password      = Introduce tu nueva contraseña maestra
+setup.tooltip_confirm       = Vuelve a introducir la contraseña para confirmar
+setup.btn_create            = &Crear diario
+setup.err_validation_title  = Error de validación
+setup.err_too_short         = La contraseña debe tener al menos 4 caracteres.
+setup.err_no_match          = Las contraseñas no coinciden. Por favor, inténtalo de nuevo.
+
+# ── Diálogo de desbloqueo ─────────────────────────────────────────────────────
+unlock.title                = Desbloquear Diario Personal
+unlock.prompt               = Introduce tu contraseña maestra para desbloquear el diario:
+unlock.label_password       = &Contraseña:
+unlock.accessible_password  = Contraseña
+unlock.tooltip_password     = Introduce tu contraseña maestra
+unlock.btn_unlock           = &Desbloquear
+unlock.btn_exit             = &Salir
+unlock.err_required_title   = Obligatorio
+unlock.err_enter_password   = Por favor, introduce tu contraseña.
+
+# ── Diálogo de nueva nota ─────────────────────────────────────────────────────
+note.title                  = Nueva nota
+note.label_date             = Fecha: {date}
+note.label_subject          = &Asunto:
+note.label_note             = &Nota:
+note.accessible_subject     = Asunto
+note.accessible_note        = Texto de la nota
+note.tooltip_subject        = Introduce un breve asunto para esta nota
+note.tooltip_note           = Escribe tu entrada en el diario aquí
+note.btn_save               = &Guardar nota
+note.err_required_title     = Obligatorio
+note.err_enter_subject      = Por favor, introduce un asunto para la nota.
+note.err_enter_content      = Por favor, introduce el texto de la nota.
+
+# ── Menú contextual / editar / eliminar nota ─────────────────────────────────
+note.ctx_edit               = Editar nota
+note.ctx_delete             = Eliminar nota
+note.edit_title             = Editar nota
+note.edit_btn_save          = &Guardar cambios
+note.delete_confirm_title   = Eliminar nota
+note.delete_confirm_msg     = ¿Estás seguro de que quieres eliminar "{subject}"? Esta acción no se puede deshacer.
+
+# ── Pantalla de bloqueo ───────────────────────────────────────────────────────
+menu.search                 = &Buscar	Ctrl+F
+menu.search_help            = Buscar en notas, alarmas y entradas del diario
+menu.lock                   = &Bloquear diario	Ctrl+Alt+L
+menu.lock_help              = Bloquear el diario y ocultar su contenido
+menu.tray                   = &Ocultar en la bandeja	Alt+Shift+F4
+menu.tray_help              = Bloquear y ocultar el diario en la bandeja del sistema
+lock.status                 = Bloqueado
+lock.message                = El diario está bloqueado.
+lock.btn_unlock             = Desbloquear diario
+
+# ── Bandeja del sistema ───────────────────────────────────────────────────────
+tray.tooltip                = Diario Personal
+tray.restore                = Restaurar
+tray.quit                   = Salir
+
+# ── Pestañas ──────────────────────────────────────────────────────────────────
+tab.notes                   = Notas
+tab.alarms                  = Alarmas
+tab.diary                   = Diarios
+
+# ── Menú de alarmas ───────────────────────────────────────────────────────────
+menu.alarms                 = &Alarmas
+menu.new_alarm              = &Nueva alarma	Ctrl+Shift+N
+menu.new_alarm_help         = Crear una nueva alarma
+
+# ── Lista de alarmas (ventana principal) ──────────────────────────────────────
+frame.label_alarms          = &Alarmas:
+frame.accessible_alarms     = Lista de alarmas
+frame.col_alarm_subject     = Asunto
+frame.col_alarm_note        = Nota
+frame.col_alarm_date        = Fecha
+frame.col_alarm_time        = Hora
+
+# ── Diálogo de nueva / editar alarma ─────────────────────────────────────────
+alarm.new_title             = Nueva alarma
+alarm.edit_title            = Editar alarma
+alarm.label_subject         = &Asunto:
+alarm.label_note            = &Nota:
+alarm.label_datetime        = &Fecha y hora:
+alarm.accessible_subject    = Asunto
+alarm.accessible_note       = Nota de la alarma
+alarm.accessible_date       = Fecha de la alarma
+alarm.accessible_hour       = Hora
+alarm.accessible_minute     = Minuto
+alarm.tooltip_subject       = Introduce un breve asunto para esta alarma
+alarm.tooltip_note          = Introduce una nota opcional para esta alarma
+alarm.btn_save              = &Guardar alarma
+alarm.edit_btn_save         = &Guardar cambios
+alarm.err_required_title    = Obligatorio
+alarm.err_enter_subject     = Por favor, introduce un asunto para la alarma.
+alarm.err_past_datetime     = La fecha y hora de la alarma debe ser en el futuro.
+
+# ── Diálogo de alarma activada ────────────────────────────────────────────────
+alarm.fired_title           = Alarma
+alarm.fired_locked_msg      = Hay una alarma pendiente.
+alarm.btn_snooze            = &Posponer (Ctrl+Alt+F1)
+alarm.btn_stop              = &Detener (Ctrl+Alt+F2)
+alarm.missed_title          = Alarmas perdidas
+alarm.missed_msg            = {n} alarma(s) estaban programadas mientras la aplicación estaba cerrada:
+alarm.missed_list_name      = Lista de alarmas perdidas
+alarm.missed_col_time       = Hora programada
+alarm.missed_col_subject    = Asunto
+alarm.missed_snooze         = &Posponer todas
+alarm.missed_dismiss        = &Descartar todas
+
+# ── Menú contextual / eliminar alarma ────────────────────────────────────────
+alarm.ctx_edit              = Editar alarma
+alarm.ctx_delete            = Eliminar alarma
+alarm.delete_confirm_title  = Eliminar alarma
+alarm.delete_confirm_msg    = ¿Estás seguro de que quieres eliminar "{subject}"? Esta acción no se puede deshacer.
+
+# ── Pestaña Diario ────────────────────────────────────────────────────────────
+diary.label_tree            = &Entradas:
+diary.accessible_tree       = Entradas del diario
+diary.label_entry           = &Entrada del diario:
+diary.accessible_entry      = Entrada del diario
+diary.tooltip_entry         = Escribe tu entrada del diario para el día seleccionado (guardado automáticamente)
+diary.default_name          = Diario
+diary.label_selector        = &Diario:
+diary.accessible_selector   = Diario activo
+diary.btn_manage            = &Gestionar...
+diary.btn_manage_tip        = Crear, renombrar o eliminar diarios
+diary.manage_title          = Gestionar diarios
+diary.manage_accessible_list= Diarios
+diary.btn_new_diary         = &Nuevo diario
+diary.btn_rename_diary      = &Renombrar
+diary.btn_delete_diary      = &Eliminar
+diary.new_diary_title       = Nuevo diario
+diary.new_diary_label       = Nombre del &diario:
+diary.rename_diary_title    = Renombrar diario
+diary.rename_diary_label    = &Nuevo nombre:
+diary.delete_confirm_title  = Eliminar diario
+diary.delete_confirm_msg    = ¿Eliminar "{name}" y todas sus {n} entradas? Esta acción no se puede deshacer.
+diary.delete_confirm_last   = No se puede eliminar el único diario.
+diary.err_empty_name        = Por favor, introduce un nombre para el diario.
+diary.err_name_title        = Nombre requerido
+diary.btn_goto_date         = &Ir a fecha...
+diary.btn_goto_date_tip     = Abrir un calendario para navegar a cualquier fecha pasada
+diary.goto_title            = Ir a fecha
+diary.goto_label            = &Selecciona una fecha para abrir (hoy o anterior):
+diary.goto_accessible_cal   = Selector de fecha
+diary.goto_btn_go           = &Ir
+diary.goto_err_title        = Fecha no válida
+diary.goto_err_future       = Por favor, selecciona hoy o una fecha pasada.
+
+# ── Búsqueda ──────────────────────────────────────────────────────────────────
+search.title                = Buscar
+search.label_query          = &Buscar:
+search.accessible_query     = Término de búsqueda
+search.tooltip_query        = Introduce texto para buscar en notas, alarmas y entradas del diario
+search.btn_search           = B&uscar
+search.accessible_results   = Resultados de búsqueda
+search.col_type             = Tipo
+search.col_title            = Título
+search.col_preview          = Vista previa
+search.col_date             = Fecha
+search.type_note            = Nota
+search.type_alarm           = Alarma
+search.type_diary           = Diario
+search.results_count        = {n} resultado(s) encontrado(s)
+search.no_results           = No se encontraron resultados para "{query}"
+search.ctx_goto_diary       = Ir a entrada del diario
+
+# ── Exportar ──────────────────────────────────────────────────────────────────
+menu.export                 = &Exportar...	Ctrl+E
+menu.export_help            = Exportar entradas del diario o notas a archivos Markdown
+export.title                = Exportar
+export.source               = Fuente
+export.source_diary         = &Diario
+export.source_notes         = &Notas
+export.format               = Formato de exportación
+export.fmt_per_entry        = Una publicación Pelican por &entrada
+export.fmt_per_week         = Una publicación Pelican por &semana
+export.fmt_per_month        = Una publicación Pelican por &mes
+export.fmt_single_md        = D&ocumento Markdown único (sin encabezado Pelican)
+export.metadata             = Metadatos Pelican
+export.meta_lang            = &Código de idioma:
+export.meta_lang_tip        = Código de idioma ISO 639-1 para el campo Lang (ej. en, sr, es)
+export.meta_tags            = &Etiquetas:
+export.meta_tags_tip        = Lista de etiquetas separadas por comas para el campo Tags de Pelican
+export.meta_series          = &Nombre de la serie:
+export.meta_series_tip      = Nombre de serie Pelican opcional; dejar en blanco para omitir los campos de serie
+export.output_label         = Des&tino:
+export.output_tip           = Carpeta para exportaciones de varios archivos, o ruta para documento único
+export.btn_browse           = &Examinar...
+export.btn_export           = E&xportar
+export.browse_folder        = Seleccionar carpeta de exportación
+export.browse_file          = Guardar archivo Markdown
+export.template_chk         = &Usar plantilla personalizada
+export.template_tip         = Variables de plantilla: {title} {date} {entry_date} {export_time} {modified} {tags} {summary} {description} {series} {series_index} {trans_id} {lang} {content} {diary_name} {year} {month} {day}
+export.template_browse_title= Abrir archivo de plantilla
+export.template_default_btn = &Predeterminada...
+export.template_save_title  = Guardar plantilla predeterminada
+export.err_title            = Error de exportación
+export.err_no_output        = Por favor, selecciona una ubicación de destino.
+export.err_template_read    = No se puede leer el archivo de plantilla: {error}
+export.err_failed           = Error al exportar: {error}
+export.success_title        = Exportación completada
+export.success_files        = Se exportaron correctamente {count} archivo(s).
+export.success_single       = Se exportaron correctamente {count} elemento(s) a un solo archivo.
+export.all_diaries          = Todos los diarios
+export.fmt_month_title      = {month_lc} de {year}
+export.fmt_week_same        = Del {d1} al {d2} de {month_lc} de {year}
+export.fmt_week_cross       = Del {d1} de {m1_lc} al {d2} de {m2_lc} de {year}
+export.fmt_week_cross_year  = Del {d1} de {m1_lc} de {y1} al {d2} de {m2_lc} de {y2}
+
+# ── Copia de seguridad ────────────────────────────────────────────────────────
+menu.backup                 = &Copia de seguridad...	Ctrl+Shift+B
+menu.backup_help            = Crear una copia de seguridad de la base de datos y la configuración
+backup.title                = Copia de seguridad del diario
+backup.info                 = Crea una copia de seguridad cifrada de todas las entradas del diario, notas, alarmas y configuración.
+backup.mode_local           = Archivo &local
+backup.mode_ftp             = Subida por &FTP
+backup.local_label          = &Guardar en:
+backup.local_tip            = Carpeta donde se guardará el archivo de copia de seguridad
+backup.local_browse         = &Examinar...
+backup.local_browse_title   = Seleccionar carpeta para copia de seguridad
+backup.ftp_host             = &Host:
+backup.ftp_port             = &Puerto:
+backup.ftp_user             = &Usuario:
+backup.ftp_password         = &Contraseña:
+backup.ftp_path             = R&uta remota:
+backup.ftp_tls              = Conexión &segura (FTPS)
+backup.ftp_remember         = Re&cordar configuración FTP
+backup.ftp_pass_note        = La contraseña FTP se almacena sin cifrar en settings.ini
+backup.btn_backup           = &Crear copia de seguridad
+backup.err_title            = Error en la copia de seguridad
+backup.err_no_output        = Por favor, selecciona una carpeta de destino.
+backup.err_no_host          = Por favor, introduce un host FTP.
+backup.err_no_user          = Por favor, introduce un nombre de usuario FTP.
+backup.err_ftp              = Error FTP: {error}
+backup.err_write            = No se pudo escribir el archivo de copia de seguridad: {error}
+backup.success_title        = Copia de seguridad completada
+backup.success_local        = Copia de seguridad guardada en:\n{path}
+backup.success_ftp          = Copia de seguridad subida a {host} ({path})
+
+# ── Atajos ────────────────────────────────────────────────────────────────────
+menu.shortcuts              = Personalizar &atajos...
+menu.shortcuts_help         = Editar atajos de teclado para las acciones del menú
+shortcuts.title             = Personalizar atajos
+shortcuts.col_action        = Acción
+shortcuts.col_shortcut      = Atajo
+shortcuts.accessible_list   = Atajos de teclado
+shortcuts.btn_reassign      = &Reasignar...
+shortcuts.btn_reset         = Restablecer al &valor predeterminado
+shortcuts.conflict_title    = Conflicto de atajo
+shortcuts.conflict_msg      = {shortcut} ya está asignado a "{action}". ¿Usar de todos modos?
+shortcuts.capture_title     = Nuevo atajo
+shortcuts.capture_prompt    = Pulse la nueva combinación de teclas para:
+shortcuts.capture_hint      = Pulse una combinación de teclas (Ctrl, Alt o Mayús + tecla). Intro para confirmar. Esc para cancelar.
+
+# ── Localización de fechas ────────────────────────────────────────────────────
+date.month.1                = Enero
+date.month.2                = Febrero
+date.month.3                = Marzo
+date.month.4                = Abril
+date.month.5                = Mayo
+date.month.6                = Junio
+date.month.7                = Julio
+date.month.8                = Agosto
+date.month.9                = Septiembre
+date.month.10               = Octubre
+date.month.11               = Noviembre
+date.month.12               = Diciembre
+date.weekday.0              = Lunes
+date.weekday.1              = Martes
+date.weekday.2              = Miércoles
+date.weekday.3              = Jueves
+date.weekday.4              = Viernes
+date.weekday.5              = Sábado
+date.weekday.6              = Domingo

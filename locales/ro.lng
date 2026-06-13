@@ -1,0 +1,327 @@
+# Personal Journal — Română
+lang.name = Română
+lang.code = ro
+
+# ── Aplicație ─────────────────────────────────────────────────────────────────
+app.title                   = Jurnal Personal
+app.err_title               = Eroare
+app.err_db_init_failed      = Nu s-a putut inițializa baza de date a jurnalului.
+app.err_auth_failed_title   = Autentificare eșuată
+app.err_auth_failed         = Parolă incorectă. {remaining} încercare(i) rămase.
+app.err_locked_out_title    = Acces blocat
+app.err_locked_out          = Prea multe încercări eșuate. Aplicația se va închide.
+
+# ── Bara de meniu ─────────────────────────────────────────────────────────────
+menu.file                   = &Fișier
+menu.notes                  = &Note
+menu.diaries                = &Jurnale
+menu.new_note               = &Notă nouă	Ctrl+N
+menu.new_note_help          = Creează o notă nouă în jurnal
+menu.new_diary              = &Jurnal nou...	Ctrl+D
+menu.new_diary_help         = Creează un nou jurnal cu nume
+menu.goto_date              = &Mergi la dată...	Ctrl+G
+menu.goto_date_help         = Deschide un calendar pentru a naviga la o intrare din jurnal
+menu.manage_diaries         = &Gestionează jurnale...	Ctrl+Shift+D
+menu.manage_diaries_help    = Creează, redenumește sau șterge jurnale
+menu.exit                   = &Ieșire	Alt+F4
+menu.exit_help              = Ieșire din aplicație
+menu.language               = &Limbă
+
+# ── Fereastra principală ──────────────────────────────────────────────────────
+frame.accessible_splitter   = Separator jurnal
+frame.label_dates           = &Date cu note:
+frame.accessible_dates      = Date cu note
+frame.col_date              = Dată
+frame.col_notes_count       = Note
+frame.label_notes           = &Note pentru data selectată:
+frame.accessible_notes      = Lista de note
+frame.col_subject           = Subiect
+frame.col_time              = Oră
+frame.label_content         = &Conținut notă:
+frame.accessible_preview    = Previzualizare conținut notă
+frame.tooltip_preview       = Conținutul notei selectate (doar citire)
+frame.status_count          = {n} dată/date cu note
+
+# ── Meniu limbă ───────────────────────────────────────────────────────────────
+lang.changed_title          = Limbă schimbată
+lang.changed_msg            = Limba a fost schimbată. Fereastra se reîncarcă.
+
+# ── Dialog configurare parolă (prima lansare) ─────────────────────────────────
+setup.title                 = Setează parola principală
+setup.intro                 = Bun venit la Jurnal Personal.\nVă rugăm să alegeți o parolă principală pentru a cripta jurnalul.
+setup.label_password        = &Parolă:
+setup.label_confirm         = Con&firmare:
+setup.accessible_password   = Parolă
+setup.accessible_confirm    = Confirmare parolă
+setup.tooltip_password      = Introduceți noua parolă principală
+setup.tooltip_confirm       = Reintroduceți parola pentru confirmare
+setup.btn_create            = &Creează jurnalul
+setup.err_validation_title  = Eroare validare
+setup.err_too_short         = Parola trebuie să aibă cel puțin 4 caractere.
+setup.err_no_match          = Parolele nu se potrivesc. Vă rugăm încercați din nou.
+
+# ── Dialog deblocare ──────────────────────────────────────────────────────────
+unlock.title                = Deblochează Jurnal Personal
+unlock.prompt               = Introduceți parola principală pentru a debloca jurnalul:
+unlock.label_password       = &Parolă:
+unlock.accessible_password  = Parolă
+unlock.tooltip_password     = Introduceți parola principală
+unlock.btn_unlock           = &Deblochează
+unlock.btn_exit             = &Ieșire
+unlock.err_required_title   = Obligatoriu
+unlock.err_enter_password   = Vă rugăm introduceți parola.
+
+# ── Dialog notă nouă ──────────────────────────────────────────────────────────
+note.title                  = Notă nouă
+note.label_date             = Dată: {date}
+note.label_subject          = &Subiect:
+note.label_note             = &Notă:
+note.accessible_subject     = Subiect
+note.accessible_note        = Textul notei
+note.tooltip_subject        = Introduceți un subiect scurt pentru această notă
+note.tooltip_note           = Scrieți înregistrarea în jurnal aici
+note.btn_save               = &Salvează nota
+note.err_required_title     = Obligatoriu
+note.err_enter_subject      = Vă rugăm introduceți un subiect pentru notă.
+note.err_enter_content      = Vă rugăm introduceți textul notei.
+
+# ── Meniu contextual / editare / ștergere notă ───────────────────────────────
+note.ctx_edit               = Editează nota
+note.ctx_delete             = Șterge nota
+note.edit_title             = Editează nota
+note.edit_btn_save          = &Salvează modificările
+note.delete_confirm_title   = Șterge nota
+note.delete_confirm_msg     = Sigur doriți să ștergeți "{subject}"? Această acțiune nu poate fi anulată.
+
+# ── Ecran de blocare ──────────────────────────────────────────────────────────
+menu.search                 = &Căutare	Ctrl+F
+menu.search_help            = Caută în note, alarme și înregistrări jurnal
+menu.lock                   = &Blochează jurnalul	Ctrl+Alt+L
+menu.lock_help              = Blochează jurnalul și ascunde conținutul
+menu.tray                   = &Minimizează în tavă	Alt+Shift+F4
+menu.tray_help              = Blochează și ascunde jurnalul în bara de sistem
+lock.status                 = Blocat
+lock.message                = Jurnalul este blocat.
+lock.btn_unlock             = Deblochează jurnalul
+
+# ── Bara de sistem ────────────────────────────────────────────────────────────
+tray.tooltip                = Jurnal Personal
+tray.restore                = Restaurare
+tray.quit                   = Ieșire
+
+# ── File ──────────────────────────────────────────────────────────────────────
+tab.notes                   = Note
+tab.alarms                  = Alarme
+tab.diary                   = Jurnale
+
+# ── Meniu alarme ──────────────────────────────────────────────────────────────
+menu.alarms                 = &Alarme
+menu.new_alarm              = &Alarmă nouă	Ctrl+Shift+N
+menu.new_alarm_help         = Creează o alarmă nouă
+
+# ── Lista alarme (fereastra principală) ───────────────────────────────────────
+frame.label_alarms          = &Alarme:
+frame.accessible_alarms     = Lista de alarme
+frame.col_alarm_subject     = Subiect
+frame.col_alarm_note        = Notă
+frame.col_alarm_date        = Dată
+frame.col_alarm_time        = Oră
+
+# ── Dialog alarmă nouă / editare ─────────────────────────────────────────────
+alarm.new_title             = Alarmă nouă
+alarm.edit_title            = Editează alarma
+alarm.label_subject         = &Subiect:
+alarm.label_note            = &Notă:
+alarm.label_datetime        = &Dată și oră:
+alarm.accessible_subject    = Subiect
+alarm.accessible_note       = Nota alarmei
+alarm.accessible_date       = Data alarmei
+alarm.accessible_hour       = Oră
+alarm.accessible_minute     = Minut
+alarm.tooltip_subject       = Introduceți un subiect scurt pentru această alarmă
+alarm.tooltip_note          = Introduceți o notă opțională pentru această alarmă
+alarm.btn_save              = &Salvează alarma
+alarm.edit_btn_save         = &Salvează modificările
+alarm.err_required_title    = Obligatoriu
+alarm.err_enter_subject     = Vă rugăm introduceți un subiect pentru alarmă.
+alarm.err_past_datetime     = Data și ora alarmei trebuie să fie în viitor.
+
+# ── Dialog alarmă declanșată ──────────────────────────────────────────────────
+alarm.fired_title           = Alarmă
+alarm.fired_locked_msg      = Există o alarmă în așteptare.
+alarm.btn_snooze            = &Amânare (Ctrl+Alt+F1)
+alarm.btn_stop              = &Oprire (Ctrl+Alt+F2)
+alarm.missed_title          = Alarme ratate
+alarm.missed_msg            = {n} alarmă(e) au fost programate în timp ce aplicația era închisă:
+alarm.missed_list_name      = Lista alarmelor ratate
+alarm.missed_col_time       = Oră programată
+alarm.missed_col_subject    = Subiect
+alarm.missed_snooze         = &Amânare toate
+alarm.missed_dismiss        = &Respingere toate
+
+# ── Meniu contextual / ștergere alarmă ───────────────────────────────────────
+alarm.ctx_edit              = Editează alarma
+alarm.ctx_delete            = Șterge alarma
+alarm.delete_confirm_title  = Șterge alarma
+alarm.delete_confirm_msg    = Sigur doriți să ștergeți "{subject}"? Această acțiune nu poate fi anulată.
+
+# ── Fila Jurnal ───────────────────────────────────────────────────────────────
+diary.label_tree            = &Înregistrări:
+diary.accessible_tree       = Înregistrări jurnal
+diary.label_entry           = &Înregistrare jurnal:
+diary.accessible_entry      = Înregistrare jurnal
+diary.tooltip_entry         = Scrieți înregistrarea pentru ziua selectată (salvare automată)
+diary.default_name          = Jurnal
+diary.label_selector        = &Jurnal:
+diary.accessible_selector   = Jurnal activ
+diary.btn_manage            = &Gestionează...
+diary.btn_manage_tip        = Creați, redenumiți sau ștergeți jurnale
+diary.manage_title          = Gestionare jurnale
+diary.manage_accessible_list= Jurnale
+diary.btn_new_diary         = &Jurnal nou
+diary.btn_rename_diary      = &Redenumire
+diary.btn_delete_diary      = &Ștergere
+diary.new_diary_title       = Jurnal nou
+diary.new_diary_label       = &Numele jurnalului:
+diary.rename_diary_title    = Redenumire jurnal
+diary.rename_diary_label    = &Nume nou:
+diary.delete_confirm_title  = Ștergere jurnal
+diary.delete_confirm_msg    = Ștergeți "{name}" și toate cele {n} înregistrări? Nu poate fi anulat.
+diary.delete_confirm_last   = Nu se poate șterge singurul jurnal.
+diary.err_empty_name        = Vă rugăm introduceți un nume pentru jurnal.
+diary.err_name_title        = Nume obligatoriu
+diary.btn_goto_date         = &Mergi la dată...
+diary.btn_goto_date_tip     = Deschide un calendar pentru a naviga la orice dată din trecut
+diary.goto_title            = Mergi la dată
+diary.goto_label            = &Selectați o dată pentru a deschide (azi sau în trecut):
+diary.goto_accessible_cal   = Selector dată
+diary.goto_btn_go           = &Mergi
+diary.goto_err_title        = Dată invalidă
+diary.goto_err_future       = Vă rugăm selectați azi sau o dată din trecut.
+
+# ── Căutare ───────────────────────────────────────────────────────────────────
+search.title                = Căutare
+search.label_query          = &Căutare:
+search.accessible_query     = Termen de căutare
+search.tooltip_query        = Introduceți text pentru a căuta în note, alarme și înregistrări jurnal
+search.btn_search           = &Caută
+search.accessible_results   = Rezultate căutare
+search.col_type             = Tip
+search.col_title            = Titlu
+search.col_preview          = Previzualizare
+search.col_date             = Dată
+search.type_note            = Notă
+search.type_alarm           = Alarmă
+search.type_diary           = Jurnal
+search.results_count        = {n} rezultat(e) găsite
+search.no_results           = Nu s-au găsit rezultate pentru "{query}"
+search.ctx_goto_diary       = Mergi la înregistrarea din jurnal
+
+# ── Export ────────────────────────────────────────────────────────────────────
+menu.export                 = &Export...	Ctrl+E
+menu.export_help            = Exportați înregistrări jurnal sau note în fișiere Markdown
+export.title                = Export
+export.source               = Sursă
+export.source_diary         = &Jurnal
+export.source_notes         = &Note
+export.format               = Format export
+export.fmt_per_entry        = O postare Pelican per &înregistrare
+export.fmt_per_week         = O postare Pelican per &săptămână
+export.fmt_per_month        = O postare Pelican per &lună
+export.fmt_single_md        = &Document Markdown unic (fără antet Pelican)
+export.metadata             = Metadate Pelican
+export.meta_lang            = &Cod limbă:
+export.meta_lang_tip        = Cod limbă ISO 639-1 pentru câmpul Lang (ex. en, ro, fr)
+export.meta_tags            = &Etichete:
+export.meta_tags_tip        = Listă de etichete separate prin virgulă pentru câmpul Tags din Pelican
+export.meta_series          = &Numele seriei:
+export.meta_series_tip      = Nume serie Pelican opțional; lăsați gol pentru a omite câmpurile de serie
+export.output_label         = &Ieșire:
+export.output_tip           = Folder pentru exporturi cu mai multe fișiere sau cale pentru document unic
+export.btn_browse           = &Răsfoire...
+export.btn_export           = &Exportă
+export.browse_folder        = Selectați folderul de export
+export.browse_file          = Salvați fișierul Markdown
+export.template_chk         = &Utilizați șablon personalizat
+export.template_tip         = Variabile șablon: {title} {date} {entry_date} {export_time} {modified} {tags} {summary} {description} {series} {series_index} {trans_id} {lang} {content} {diary_name} {year} {month} {day}
+export.template_browse_title= Deschide fișier șablon
+export.template_default_btn = &Implicit...
+export.template_save_title  = Salvați șablonul implicit
+export.err_title            = Eroare export
+export.err_no_output        = Vă rugăm selectați o locație de ieșire.
+export.err_template_read    = Nu se poate citi fișierul șablon: {error}
+export.err_failed           = Exportul a eșuat: {error}
+export.success_title        = Export finalizat
+export.success_files        = {count} fișier(e) exportate cu succes.
+export.success_single       = {count} element(e) exportate cu succes într-un singur fișier.
+export.all_diaries          = Toate jurnalele
+export.fmt_month_title      = {month_lc} {year}
+export.fmt_week_same        = {d1}–{d2} {month_lc} {year}
+export.fmt_week_cross       = {d1} {m1_lc}–{d2} {m2_lc} {year}
+export.fmt_week_cross_year  = {d1} {m1_lc} {y1}–{d2} {m2_lc} {y2}
+
+# ── Copie de rezervă ─────────────────────────────────────────────────────────
+menu.backup                 = &Copie de rezervă...	Ctrl+Shift+B
+menu.backup_help            = Creați o copie de rezervă a bazei de date și setărilor
+backup.title                = Copie de rezervă jurnal
+backup.info                 = Creează o copie de rezervă criptată a tuturor înregistrărilor, notelor, alarmelor și setărilor.
+backup.mode_local           = Fișier &local
+backup.mode_ftp             = Încărcare &FTP
+backup.local_label          = &Salvare în:
+backup.local_tip            = Dosarul unde va fi salvat fișierul de rezervă
+backup.local_browse         = &Răsfoire...
+backup.local_browse_title   = Selectați dosarul pentru copie de rezervă
+backup.ftp_host             = &Host:
+backup.ftp_port             = &Port:
+backup.ftp_user             = &Nume utilizator:
+backup.ftp_password         = &Parolă:
+backup.ftp_path             = Cale &la distanță:
+backup.ftp_tls              = Conexiune &securizată (FTPS)
+backup.ftp_remember         = Re&ține setările FTP
+backup.ftp_pass_note        = Parola FTP este stocată necriptată în settings.ini
+backup.btn_backup           = &Creează copie de rezervă
+backup.err_title            = Copie de rezervă eșuată
+backup.err_no_output        = Vă rugăm selectați un dosar de destinație.
+backup.err_no_host          = Vă rugăm introduceți un host FTP.
+backup.err_no_user          = Vă rugăm introduceți un nume de utilizator FTP.
+backup.err_ftp              = Eroare FTP: {error}
+backup.err_write            = Nu s-a putut scrie fișierul de rezervă: {error}
+backup.success_title        = Copie de rezervă completă
+backup.success_local        = Copie de rezervă salvată în:\n{path}
+backup.success_ftp          = Copie de rezervă încărcată pe {host} ({path})
+
+# ── Scurtături ───────────────────────────────────────────────────────────────
+menu.shortcuts              = Personalizează &scurtături...
+menu.shortcuts_help         = Editează scurtăturile de tastatură pentru acțiunile din meniu
+shortcuts.title             = Personalizează scurtături
+shortcuts.col_action        = Acțiune
+shortcuts.col_shortcut      = Scurtătură
+shortcuts.accessible_list   = Scurtături de tastatură
+shortcuts.btn_reassign      = &Reatribuie...
+shortcuts.btn_reset         = Resetează la &implicit
+shortcuts.conflict_title    = Conflict de scurtătură
+shortcuts.conflict_msg      = {shortcut} este deja atribuit acțiunii „{action}". Utilizați oricum?
+shortcuts.capture_title     = Scurtătură nouă
+shortcuts.capture_prompt    = Apăsați noua combinație de taste pentru:
+shortcuts.capture_hint      = Apăsați o combinație de taste (Ctrl, Alt sau Shift + tastă). Enter pentru confirmare. Esc pentru anulare.
+
+# ── Localizare date ───────────────────────────────────────────────────────────
+date.month.1                = Ianuarie
+date.month.2                = Februarie
+date.month.3                = Martie
+date.month.4                = Aprilie
+date.month.5                = Mai
+date.month.6                = Iunie
+date.month.7                = Iulie
+date.month.8                = August
+date.month.9                = Septembrie
+date.month.10               = Octombrie
+date.month.11               = Noiembrie
+date.month.12               = Decembrie
+date.weekday.0              = Luni
+date.weekday.1              = Marți
+date.weekday.2              = Miercuri
+date.weekday.3              = Joi
+date.weekday.4              = Vineri
+date.weekday.5              = Sâmbătă
+date.weekday.6              = Duminică

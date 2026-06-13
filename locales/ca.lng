@@ -1,0 +1,327 @@
+# Personal Journal — Català
+lang.name = Català
+lang.code = ca
+
+# ── Aplicació ─────────────────────────────────────────────────────────────────
+app.title                   = Diari Personal
+app.err_title               = Error
+app.err_db_init_failed      = No s'ha pogut inicialitzar la base de dades del diari.
+app.err_auth_failed_title   = Autenticació fallida
+app.err_auth_failed         = Contrasenya incorrecta. {remaining} intent(s) restant(s).
+app.err_locked_out_title    = Accés bloquejat
+app.err_locked_out          = Massa intents fallits. L'aplicació es tancarà.
+
+# ── Barra de menú ─────────────────────────────────────────────────────────────
+menu.file                   = &Fitxer
+menu.notes                  = &Notes
+menu.diaries                = &Diaris
+menu.new_note               = &Nova nota	Ctrl+N
+menu.new_note_help          = Crear una nova nota al diari
+menu.new_diary              = &Diari nou...	Ctrl+D
+menu.new_diary_help         = Crear un nou diari amb nom
+menu.goto_date              = &Ves a la data...	Ctrl+G
+menu.goto_date_help         = Obre un calendari per navegar a una entrada del diari
+menu.manage_diaries         = &Gestiona els diaris...	Ctrl+Shift+D
+menu.manage_diaries_help    = Crea, reanomena o elimina diaris
+menu.exit                   = &Surt	Alt+F4
+menu.exit_help              = Sortir de l'aplicació
+menu.language               = &Idioma
+
+# ── Finestra principal ───────────────────────────────────────────────────────
+frame.accessible_splitter   = Divisor del diari
+frame.label_dates           = &Dates amb notes:
+frame.accessible_dates      = Dates amb notes
+frame.col_date              = Data
+frame.col_notes_count       = Notes
+frame.label_notes           = &Notes per a la data seleccionada:
+frame.accessible_notes      = Llista de notes
+frame.col_subject           = Assumpte
+frame.col_time              = Hora
+frame.label_content         = &Contingut de la nota:
+frame.accessible_preview    = Vista prèvia del contingut de la nota
+frame.tooltip_preview       = Contingut de la nota seleccionada (només lectura)
+frame.status_count          = {n} data/es amb notes
+
+# ── Menú d'idioma ─────────────────────────────────────────────────────────────
+lang.changed_title          = Idioma canviat
+lang.changed_msg            = L'idioma ha canviat. S'està tornant a carregar la finestra.
+
+# ── Diàleg de configuració de contrasenya (primer inici) ────────────────────
+setup.title                 = Estableix la contrasenya mestra
+setup.intro                 = Benvingut/da al Diari Personal.\nSi us plau, trieu una contrasenya mestra per xifrar el vostre diari.
+setup.label_password        = &Contrasenya:
+setup.label_confirm         = Con&firma:
+setup.accessible_password   = Contrasenya
+setup.accessible_confirm    = Confirmació de la contrasenya
+setup.tooltip_password      = Introduïu la vostra nova contrasenya mestra
+setup.tooltip_confirm       = Torneu a introduir la contrasenya per confirmar
+setup.btn_create            = &Crea el diari
+setup.err_validation_title  = Error de validació
+setup.err_too_short         = La contrasenya ha de tenir almenys 4 caràcters.
+setup.err_no_match          = Les contrasenyes no coincideixen. Torneu-ho a provar.
+
+# ── Diàleg de desbloqueig ─────────────────────────────────────────────────────
+unlock.title                = Desbloqueja el Diari Personal
+unlock.prompt               = Introduïu la vostra contrasenya mestra per desbloquejar el diari:
+unlock.label_password       = &Contrasenya:
+unlock.accessible_password  = Contrasenya
+unlock.tooltip_password     = Introduïu la vostra contrasenya mestra
+unlock.btn_unlock           = &Desbloqueja
+unlock.btn_exit             = &Surt
+unlock.err_required_title   = Obligatori
+unlock.err_enter_password   = Si us plau, introduïu la vostra contrasenya.
+
+# ── Diàleg de nova nota ───────────────────────────────────────────────────────
+note.title                  = Nova nota
+note.label_date             = Data: {date}
+note.label_subject          = &Assumpte:
+note.label_note             = &Nota:
+note.accessible_subject     = Assumpte
+note.accessible_note        = Text de la nota
+note.tooltip_subject        = Introduïu un breu assumpte per a aquesta nota
+note.tooltip_note           = Escriviu aquí la vostra entrada al diari
+note.btn_save               = &Desa la nota
+note.err_required_title     = Obligatori
+note.err_enter_subject      = Si us plau, introduïu un assumpte per a la nota.
+note.err_enter_content      = Si us plau, introduïu text per a la nota.
+
+# ── Menú contextual / editar / eliminar nota ─────────────────────────────────
+note.ctx_edit               = Edita la nota
+note.ctx_delete             = Elimina la nota
+note.edit_title             = Edita la nota
+note.edit_btn_save          = &Desa els canvis
+note.delete_confirm_title   = Elimina la nota
+note.delete_confirm_msg     = Esteu segur/a que voleu eliminar "{subject}"? No es pot desfer.
+
+# ── Pantalla de bloqueig ──────────────────────────────────────────────────────
+menu.search                 = &Cerca	Ctrl+F
+menu.search_help            = Cerca notes, alarmes i entrades del diari
+menu.lock                   = &Bloqueja el diari	Ctrl+Alt+L
+menu.lock_help              = Bloqueja el diari i amaga el seu contingut
+menu.tray                   = &Minimitza a la safata del sistema	Alt+Shift+F4
+menu.tray_help              = Bloqueja i amaga el diari a la safata del sistema
+lock.status                 = Bloquejat
+lock.message                = El diari està bloquejat.
+lock.btn_unlock             = Desbloqueja el diari
+
+# ── Safata del sistema ────────────────────────────────────────────────────────
+tray.tooltip                = Diari Personal
+tray.restore                = Restaura
+tray.quit                   = Surt
+
+# ── Pestanyes ─────────────────────────────────────────────────────────────────
+tab.notes                   = Notes
+tab.alarms                  = Alarmes
+tab.diary                   = Diaris
+
+# ── Menú d'alarmes ────────────────────────────────────────────────────────────
+menu.alarms                 = &Alarmes
+menu.new_alarm              = &Nova alarma	Ctrl+Shift+N
+menu.new_alarm_help         = Crear una nova alarma
+
+# ── Llista d'alarmes (finestra principal) ─────────────────────────────────────
+frame.label_alarms          = &Alarmes:
+frame.accessible_alarms     = Llista d'alarmes
+frame.col_alarm_subject     = Assumpte
+frame.col_alarm_note        = Nota
+frame.col_alarm_date        = Data
+frame.col_alarm_time        = Hora
+
+# ── Diàleg de nova / editar alarma ───────────────────────────────────────────
+alarm.new_title             = Nova alarma
+alarm.edit_title            = Edita l'alarma
+alarm.label_subject         = &Assumpte:
+alarm.label_note            = &Nota:
+alarm.label_datetime        = &Data i hora:
+alarm.accessible_subject    = Assumpte
+alarm.accessible_note       = Nota de l'alarma
+alarm.accessible_date       = Data de l'alarma
+alarm.accessible_hour       = Hora
+alarm.accessible_minute     = Minut
+alarm.tooltip_subject       = Introduïu un breu assumpte per a aquesta alarma
+alarm.tooltip_note          = Introduïu una nota opcional per a aquesta alarma
+alarm.btn_save              = &Desa l'alarma
+alarm.edit_btn_save         = &Desa els canvis
+alarm.err_required_title    = Obligatori
+alarm.err_enter_subject     = Si us plau, introduïu un assumpte per a l'alarma.
+alarm.err_past_datetime     = La data i hora de l'alarma ha de ser en el futur.
+
+# ── Diàleg d'alarma activada ──────────────────────────────────────────────────
+alarm.fired_title           = Alarma
+alarm.fired_locked_msg      = Hi ha una alarma pendent.
+alarm.btn_snooze            = &Posposa (Ctrl+Alt+F1)
+alarm.btn_stop              = &Atura (Ctrl+Alt+F2)
+alarm.missed_title          = Alarmes perdudes
+alarm.missed_msg            = {n} alarma/es estaven programades mentre l'aplicació estava tancada:
+alarm.missed_list_name      = Llista d'alarmes perdudes
+alarm.missed_col_time       = Hora programada
+alarm.missed_col_subject    = Assumpte
+alarm.missed_snooze         = &Posposa-les totes
+alarm.missed_dismiss        = &Descarta-les totes
+
+# ── Menú contextual / eliminar alarma ────────────────────────────────────────
+alarm.ctx_edit              = Edita l'alarma
+alarm.ctx_delete            = Elimina l'alarma
+alarm.delete_confirm_title  = Elimina l'alarma
+alarm.delete_confirm_msg    = Esteu segur/a que voleu eliminar "{subject}"? No es pot desfer.
+
+# ── Pestanya Diari ────────────────────────────────────────────────────────────
+diary.label_tree            = &Entrades:
+diary.accessible_tree       = Entrades del diari
+diary.label_entry           = &Entrada del diari:
+diary.accessible_entry      = Entrada del diari
+diary.tooltip_entry         = Escriviu l'entrada del diari per al dia seleccionat (es desa automàticament)
+diary.default_name          = Diari
+diary.label_selector        = &Diari:
+diary.accessible_selector   = Diari actiu
+diary.btn_manage            = &Gestiona...
+diary.btn_manage_tip        = Crea, reanomena o elimina diaris
+diary.manage_title          = Gestiona els diaris
+diary.manage_accessible_list= Diaris
+diary.btn_new_diary         = &Nou diari
+diary.btn_rename_diary      = &Reanomena
+diary.btn_delete_diary      = &Elimina
+diary.new_diary_title       = Nou diari
+diary.new_diary_label       = &Nom del diari:
+diary.rename_diary_title    = Reanomena el diari
+diary.rename_diary_label    = &Nou nom:
+diary.delete_confirm_title  = Elimina el diari
+diary.delete_confirm_msg    = Voleu eliminar "{name}" i totes les seves {n} entrades? No es pot desfer.
+diary.delete_confirm_last   = No es pot eliminar l'únic diari.
+diary.err_empty_name        = Si us plau, introduïu un nom per al diari.
+diary.err_name_title        = Nom obligatori
+diary.btn_goto_date         = &Vés a la data...
+diary.btn_goto_date_tip     = Obre un calendari per navegar a qualsevol data passada
+diary.goto_title            = Vés a la data
+diary.goto_label            = &Seleccioneu una data per obrir (avui o anterior):
+diary.goto_accessible_cal   = Selector de data
+diary.goto_btn_go           = &Vés
+diary.goto_err_title        = Data no vàlida
+diary.goto_err_future       = Si us plau, seleccioneu avui o una data passada.
+
+# ── Cerca ─────────────────────────────────────────────────────────────────────
+search.title                = Cerca
+search.label_query          = &Cerca:
+search.accessible_query     = Terme de cerca
+search.tooltip_query        = Introduïu text per cercar a notes, alarmes i entrades del diari
+search.btn_search           = Ce&rca
+search.accessible_results   = Resultats de la cerca
+search.col_type             = Tipus
+search.col_title            = Títol
+search.col_preview          = Vista prèvia
+search.col_date             = Data
+search.type_note            = Nota
+search.type_alarm           = Alarma
+search.type_diary           = Diari
+search.results_count        = {n} resultat(s) trobat(s)
+search.no_results           = No s'han trobat resultats per a "{query}"
+search.ctx_goto_diary       = Vés a l'entrada del diari
+
+# ── Exporta ───────────────────────────────────────────────────────────────────
+menu.export                 = &Exporta...	Ctrl+E
+menu.export_help            = Exporta entrades del diari o notes a fitxers Markdown
+export.title                = Exporta
+export.source               = Font
+export.source_diary         = &Diari
+export.source_notes         = &Notes
+export.format               = Format d'exportació
+export.fmt_per_entry        = Una publicació Pelican per &entrada
+export.fmt_per_week         = Una publicació Pelican per &setmana
+export.fmt_per_month        = Una publicació Pelican per &mes
+export.fmt_single_md        = D&ocument Markdown únic (sense capçalera Pelican)
+export.metadata             = Metadades Pelican
+export.meta_lang            = &Codi d'idioma:
+export.meta_lang_tip        = Codi d'idioma ISO 639-1 per al camp Lang (p. ex. en, ca, es)
+export.meta_tags            = &Etiquetes:
+export.meta_tags_tip        = Llista d'etiquetes separades per comes per al camp Tags de Pelican
+export.meta_series          = Nom de la &sèrie:
+export.meta_series_tip      = Nom de sèrie Pelican opcional; deixeu en blanc per ometre els camps de sèrie
+export.output_label         = &Sortida:
+export.output_tip           = Carpeta per a exportacions de múltiples fitxers, o ruta per a document únic
+export.btn_browse           = &Explora...
+export.btn_export           = &Exporta
+export.browse_folder        = Seleccioneu la carpeta d'exportació
+export.browse_file          = Desa el fitxer Markdown
+export.template_chk         = &Utilitza una plantilla personalitzada
+export.template_tip         = Variables de plantilla: {title} {date} {entry_date} {export_time} {modified} {tags} {summary} {description} {series} {series_index} {trans_id} {lang} {content} {diary_name} {year} {month} {day}
+export.template_browse_title= Obre el fitxer de plantilla
+export.template_default_btn = &Predeterminada...
+export.template_save_title  = Desa la plantilla predeterminada
+export.err_title            = Error d'exportació
+export.err_no_output        = Si us plau, seleccioneu una ubicació de sortida.
+export.err_template_read    = No es pot llegir el fitxer de plantilla: {error}
+export.err_failed           = L'exportació ha fallat: {error}
+export.success_title        = Exportació completada
+export.success_files        = S'han exportat correctament {count} fitxer(s).
+export.success_single       = S'han exportat correctament {count} element(s) a un sol fitxer.
+export.all_diaries          = Tots els diaris
+export.fmt_month_title      = {month_lc} de {year}
+export.fmt_week_same        = del {d1} al {d2} de {month_lc} de {year}
+export.fmt_week_cross       = del {d1} de {m1_lc} al {d2} de {m2_lc} de {year}
+export.fmt_week_cross_year  = del {d1} de {m1_lc} de {y1} al {d2} de {m2_lc} de {y2}
+
+# ── Còpia de seguretat ────────────────────────────────────────────────────────
+menu.backup                 = &Còpia de seguretat...	Ctrl+Shift+B
+menu.backup_help            = Crear una còpia de seguretat de la base de dades i la configuració
+backup.title                = Còpia de seguretat del diari
+backup.info                 = Crea una còpia de seguretat xifrada de totes les entrades del diari, notes, alarmes i configuració.
+backup.mode_local           = Fitxer &local
+backup.mode_ftp             = Pujada per &FTP
+backup.local_label          = &Desa a:
+backup.local_tip            = Carpeta on es desarà el fitxer de còpia de seguretat
+backup.local_browse         = &Explora...
+backup.local_browse_title   = Seleccioneu la carpeta per a la còpia de seguretat
+backup.ftp_host             = &Host:
+backup.ftp_port             = &Port:
+backup.ftp_user             = &Usuari:
+backup.ftp_password         = &Contrasenya:
+backup.ftp_path             = Ruta &remota:
+backup.ftp_tls              = Connexió &segura (FTPS)
+backup.ftp_remember         = Re&corda la configuració FTP
+backup.ftp_pass_note        = La contrasenya FTP s'emmagatzema sense xifrar a settings.ini
+backup.btn_backup           = &Crea còpia de seguretat
+backup.err_title            = Error en la còpia de seguretat
+backup.err_no_output        = Si us plau, seleccioneu una carpeta de destinació.
+backup.err_no_host          = Si us plau, introduïu un host FTP.
+backup.err_no_user          = Si us plau, introduïu un nom d'usuari FTP.
+backup.err_ftp              = Error FTP: {error}
+backup.err_write            = No s'ha pogut escriure el fitxer de còpia de seguretat: {error}
+backup.success_title        = Còpia de seguretat completada
+backup.success_local        = Còpia de seguretat desada a:\n{path}
+backup.success_ftp          = Còpia de seguretat pujada a {host} ({path})
+
+# ── Dreceres ─────────────────────────────────────────────────────────────────
+menu.shortcuts              = Personalitza dr&eceres...
+menu.shortcuts_help         = Edita les dreceres de teclat per a les accions del menú
+shortcuts.title             = Personalitza dreceres
+shortcuts.col_action        = Acció
+shortcuts.col_shortcut      = Drecera
+shortcuts.accessible_list   = Dreceres de teclat
+shortcuts.btn_reassign      = &Reassigna...
+shortcuts.btn_reset         = Restableix al &valor predeterminat
+shortcuts.conflict_title    = Conflicte de drecera
+shortcuts.conflict_msg      = {shortcut} ja està assignat a "{action}". Voleu usar-lo de totes maneres?
+shortcuts.capture_title     = Nova drecera
+shortcuts.capture_prompt    = Premeu la nova combinació de tecles per a:
+shortcuts.capture_hint      = Premeu una combinació de tecles (Ctrl, Alt o Maj + tecla). Intro per confirmar. Esc per cancel·lar.
+
+# ── Localització de dates ─────────────────────────────────────────────────────
+date.month.1                = Gener
+date.month.2                = Febrer
+date.month.3                = Març
+date.month.4                = Abril
+date.month.5                = Maig
+date.month.6                = Juny
+date.month.7                = Juliol
+date.month.8                = Agost
+date.month.9                = Setembre
+date.month.10               = Octubre
+date.month.11               = Novembre
+date.month.12               = Desembre
+date.weekday.0              = Dilluns
+date.weekday.1              = Dimarts
+date.weekday.2              = Dimecres
+date.weekday.3              = Dijous
+date.weekday.4              = Divendres
+date.weekday.5              = Dissabte
+date.weekday.6              = Diumenge

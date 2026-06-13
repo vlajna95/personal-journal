@@ -1,0 +1,327 @@
+# Personal Journal — English
+lang.name = Srpski
+lang.code = sr
+
+# ── Application ──────────────────────────────────────────────────────────────
+app.title                   = Lični dnevnik
+app.err_title               = Greška
+app.err_db_init_failed      = Učitavanje baze podataka sa dnevnikom nije uspelo.
+app.err_auth_failed_title   = Autentikacija nije uspela
+app.err_auth_failed         = Netačna lozinka. {remaining} pokušaja preostalo.
+app.err_locked_out_title    = Zaključano
+app.err_locked_out          = Previše neispravnih pokušaja. Aplikacija će se zatvoriti.
+
+# ── Menu bar ─────────────────────────────────────────────────────────────────
+menu.file                   = &Datoteka
+menu.notes                  = &Beleške
+menu.diaries                = &Dnevnici
+menu.new_note               = &Nova beleška	Ctrl+N
+menu.new_note_help          = Napravi novu belešku u dnevniku
+menu.new_diary              = &Novi dnevnik...	Ctrl+D
+menu.new_diary_help         = Napravi novi dnevnik sa imenom
+menu.goto_date              = &Idi na datum...	Ctrl+G
+menu.goto_date_help         = Otvori kalendar za navigaciju do unosa u dnevniku
+menu.manage_diaries         = &Upravljanje dnevnicima...	Ctrl+Shift+D
+menu.manage_diaries_help    = Kreiraj, preimenuj ili obriši dnevnike
+menu.exit                   = I&zlaz	Alt+F4
+menu.exit_help              = Izlaz iz aplikacije
+menu.language               = &Jezik
+
+# ── Main window ──────────────────────────────────────────────────────────────
+frame.accessible_splitter   = Razdvajač dnevnika
+frame.label_dates           = &Datumi sa beleškama:
+frame.accessible_dates      = Datumi sa beleškama
+frame.col_date              = Datum
+frame.col_notes_count       = Beleške
+frame.label_notes           = &Beleške za izabrani datum:
+frame.accessible_notes      = Lista beleški
+frame.col_subject           = Naslov
+frame.col_time              = Vreme
+frame.label_content         = &Sadržaj beleške:
+frame.accessible_preview    = Kratak pregled sadržaja beleške
+frame.tooltip_preview       = Sadržaj izabrane beleške (samo za čitanje)
+frame.status_count          = {n} datuma sa beleškama
+
+# ── Language menu ─────────────────────────────────────────────────────────────
+lang.changed_title          = Jezik je promenjen
+lang.changed_msg            = Jezik je promenjen. Prozor će se ponovo učitati.
+
+# ── Password setup dialog (first launch) ─────────────────────────────────────
+setup.title                 = Podesite glavnu lozinku
+setup.intro                 = Dobro došli u Lični dnevnik.\nMolimo izaberite glavnu lozinku kako biste šifrovali vaš dnevnik.
+setup.label_password        = &Lozinka:
+setup.label_confirm         = &Potvrda lozinke:
+setup.accessible_password   = Lozinka
+setup.accessible_confirm    = Potvrda lozinke
+setup.tooltip_password      = Upišite vašu novu glavnu lozinku
+setup.tooltip_confirm       = Ponovo upišite vašu lozinku kako biste potvrdili
+setup.btn_create            = &Napravi dnevnik
+setup.err_validation_title  = Greška provere
+setup.err_too_short         = Lozinka mora da ima bar četiri znaka.
+setup.err_no_match          = Lozinke se ne podudaraju. Molimo pokušajte ponovo.
+
+# ── Unlock dialog ─────────────────────────────────────────────────────────────
+unlock.title                = Otključajte Lični dnevnik
+unlock.prompt               = Upišite vašu glavnu lozinku kako biste otključali dnevnik:
+unlock.label_password       = &Lozinka:
+unlock.accessible_password  = Lozinka
+unlock.tooltip_password     = Upišite vašu glavnu lozinku
+unlock.btn_unlock           = &Otključaj
+unlock.btn_exit             = &Zatvori
+unlock.err_required_title   = Obavezno
+unlock.err_enter_password   = Molimo upišite vašu lozinku.
+
+# ── New note dialog ───────────────────────────────────────────────────────────
+note.title                  = Nova beleška
+note.label_date             = Datum: {date}
+note.label_subject          = &Predmet:
+note.label_note             = &Beleška:
+note.accessible_subject     = Naslov
+note.accessible_note        = Tekst beleške
+note.tooltip_subject        = Upišite kratak naslov ove beleške
+note.tooltip_note           = Ovde upišite vašu belešku u dnevniku
+note.btn_save               = &Sačuvaj belešku
+note.err_required_title     = Obavezno
+note.err_enter_subject      = Molimo upišite naslov za belešku.
+note.err_enter_content      = Molimo upišite tekst beleške.
+
+# ── Note context menu / edit / delete ────────────────────────────────────────
+note.ctx_edit               = Izmeni belešku
+note.ctx_delete             = Obriši belešku
+note.edit_title             = Izmeni belešku
+note.edit_btn_save          = &Sačuvaj promene
+note.delete_confirm_title   = Obriši belešku
+note.delete_confirm_msg     = Da li ste sigurni da želite da obrišete "{subject}"? Ovo se ne može poništiti.
+
+# ── Lock screen ───────────────────────────────────────────────────────────────
+menu.search                 = &Pretraga	Ctrl+F
+menu.search_help            = Pretraži beleške, alarme i unose u dnevniku
+menu.lock                   = &Zaključaj dnevnik	Ctrl+Alt+L
+menu.lock_help              = Zaključaj dnevnik i sakrij njegov sadržaj
+menu.tray                   = &Sakrij u sistemsku traku	Alt+Shift+F4
+menu.tray_help              = Zaključaj i sakrij dnevnik u sistemsku traku
+lock.status                 = Zaključan
+lock.message                = Dnevnik je zaključan.
+lock.btn_unlock             = Otključaj dnevnik
+
+# ── System tray ───────────────────────────────────────────────────────────────
+tray.tooltip                = Lični dnevnik
+tray.restore                = Vrati
+tray.quit                   = Zatvori
+
+# ── Tabs ──────────────────────────────────────────────────────────────────────
+tab.notes                   = Beleške
+tab.alarms                  = Alarmi
+tab.diary                   = Dnevnici
+
+# ── Alarms menu ───────────────────────────────────────────────────────────────
+menu.alarms                 = &Alarmi
+menu.new_alarm              = &Novi alarm	Ctrl+Shift+N
+menu.new_alarm_help         = Napravi novi alarm
+
+# ── Alarms list (main window) ─────────────────────────────────────────────────
+frame.label_alarms          = &Alarmi:
+frame.accessible_alarms     = Lista alarma
+frame.col_alarm_subject     = Naslov
+frame.col_alarm_note        = Napomena
+frame.col_alarm_date        = Datum
+frame.col_alarm_time        = Vreme
+
+# ── New / Edit alarm dialog ───────────────────────────────────────────────────
+alarm.new_title             = Novi alarm
+alarm.edit_title            = Izmeni alarm
+alarm.label_subject         = &Naslov:
+alarm.label_note            = N&apomena:
+alarm.label_datetime        = &Datum i vreme:
+alarm.accessible_subject    = Naslov
+alarm.accessible_note       = Napomena alarma
+alarm.accessible_date       = Datum alarma
+alarm.accessible_hour       = Sat
+alarm.accessible_minute     = Minut
+alarm.tooltip_subject       = Upišite kratak naslov ovog alarma
+alarm.tooltip_note          = Upišite opcionu napomenu za ovaj alarm
+alarm.btn_save              = &Sačuvaj alarm
+alarm.edit_btn_save         = &Sačuvaj promene
+alarm.err_required_title    = Neophodno
+alarm.err_enter_subject     = Molimo upišite naslov za alarm.
+alarm.err_past_datetime     = Datum i vreme alarma mora biti u budućnosti.
+
+# ── Alarm fired dialog ────────────────────────────────────────────────────────
+alarm.fired_title           = Alarm
+alarm.fired_locked_msg      = Alarm čeka.
+alarm.btn_snooze            = &Odloži (Ctrl+Alt+F1)
+alarm.btn_stop              = &Zaustavi (Ctrl+Alt+F2)
+alarm.missed_title          = Propušteni alarmi
+alarm.missed_msg            = {n} alarm(i) su bili zakazani dok je aplikacija bila zatvorena:
+alarm.missed_list_name      = Lista propuštenih alarma
+alarm.missed_col_time       = Zakazano vreme
+alarm.missed_col_subject    = Naslov
+alarm.missed_snooze         = &Odloži sve
+alarm.missed_dismiss        = &Odbaci sve
+
+# ── Alarm context menu / delete ───────────────────────────────────────────────
+alarm.ctx_edit              = Izmeni alarm
+alarm.ctx_delete            = Obriši alarm
+alarm.delete_confirm_title  = Obriši alarm
+alarm.delete_confirm_msg    = Da li ste sigurni da želite da obrišete "{subject}"? Ovo se ne može poništiti.
+
+# ── Diary tab ─────────────────────────────────────────────────────────────────
+diary.label_tree            = &Unosi:
+diary.accessible_tree       = Unosi u dnevniku
+diary.label_entry           = &Unos u dnevniku:
+diary.accessible_entry      = Unos u dnevniku
+diary.tooltip_entry         = Upišite vaš unos u dnevniku za izabrani dan (čuva se automatski)
+diary.default_name          = Dnevnik
+diary.label_selector        = &Dnevnik:
+diary.accessible_selector   = Aktivni dnevnik
+diary.btn_manage            = &Upravljaj...
+diary.btn_manage_tip        = Kreirajte, preimenujte ili obrišite dnevnike
+diary.manage_title          = Upravljanje dnevnicima
+diary.manage_accessible_list= Dnevnici
+diary.btn_new_diary         = &Novi dnevnik
+diary.btn_rename_diary      = &Preimenuj
+diary.btn_delete_diary      = &Obriši
+diary.new_diary_title       = Novi dnevnik
+diary.new_diary_label       = &Naziv dnevnika:
+diary.rename_diary_title    = Preimenuj dnevnik
+diary.rename_diary_label    = &Novi naziv:
+diary.delete_confirm_title  = Obriši dnevnik
+diary.delete_confirm_msg    = Obrisati "{name}" i svih njegovih {n} unosa? Ovo se ne može poništiti.
+diary.delete_confirm_last   = Ne možete obrisati jedini dnevnik.
+diary.err_empty_name        = Molimo unesite naziv dnevnika.
+diary.err_name_title        = Naziv je obavezan
+diary.btn_goto_date         = &Idi na datum...
+diary.btn_goto_date_tip     = Otvorite kalendar za navigaciju do bilo kog prošlog datuma
+diary.goto_title            = Idi na datum
+diary.goto_label            = Izaberite &datum za otvaranje (danas ili ranije):
+diary.goto_accessible_cal   = Birač datuma
+diary.goto_btn_go           = &Idi
+diary.goto_err_title        = Nevažeći datum
+diary.goto_err_future       = Molimo izaberite današnji ili prošli datum.
+
+# ── Search ────────────────────────────────────────────────────────────────────
+search.title                = Pretraga
+search.label_query          = &Pretraži:
+search.accessible_query     = Termin za pretragu
+search.tooltip_query        = Upišite tekst za pretragu beleški, alarma i unosa u dnevniku
+search.btn_search           = Pre&traga
+search.accessible_results   = Rezultati pretrage
+search.col_type             = Vrsta
+search.col_title            = Naslov
+search.col_preview          = Pregled
+search.col_date             = Datum
+search.type_note            = Beleška
+search.type_alarm           = Alarm
+search.type_diary           = Dnevnik
+search.results_count        = {n} rezultata pronađeno
+search.no_results           = Nijedan rezultat nije pronađen za termin "{query}"
+search.ctx_goto_diary       = Pređi na unos u dnevniku
+
+# ── Izvoz ─────────────────────────────────────────────────────────────────────
+menu.export                 = &Izvoz...	Ctrl+E
+menu.export_help            = Izvezi unose iz dnevnika ili beleške u Markdown datoteke
+export.title                = Izvoz
+export.source               = Izvor
+export.source_diary         = &Dnevnik
+export.source_notes         = &Beleške
+export.format               = Format izvoza
+export.fmt_per_entry        = Jedan Pelican post po &unosu
+export.fmt_per_week         = Jedan Pelican post po &sedmici
+export.fmt_per_month        = Jedan Pelican post po &mesecu
+export.fmt_single_md        = &Jedna Markdown datoteka (bez Pelican zaglavlja)
+export.metadata             = Pelican metapodaci
+export.meta_lang            = &Kôd jezika:
+export.meta_lang_tip        = ISO 639-1 kôd jezika za polje Lang (npr. en, sr, es)
+export.meta_tags            = &Oznake:
+export.meta_tags_tip        = Lista oznaka razdvojena zarezima za Pelican polje Tags
+export.meta_series          = &Naziv serije:
+export.meta_series_tip      = Opcioni naziv Pelican serije; ostavite prazno da izostavite polja serije
+export.output_label         = Odr&edište:
+export.output_tip           = Fascikla za izvoz više datoteka, ili putanja datoteke za jedan dokument
+export.btn_browse           = &Pregledaj...
+export.btn_export           = &Izvezi
+export.browse_folder        = Izaberite fasciklu za izvoz
+export.browse_file          = Sačuvajte Markdown datoteku
+export.template_chk         = &Koristi prilagođeni predložak
+export.template_tip         = Promenljive predloška: {title} {date} {entry_date} {export_time} {modified} {tags} {summary} {description} {series} {series_index} {trans_id} {lang} {content} {diary_name} {year} {month} {day}
+export.template_browse_title= Otvori datoteku predloška
+export.template_default_btn = &Podrazumevani...
+export.template_save_title  = Sačuvaj podrazumevani predložak
+export.err_title            = Greška pri izvozu
+export.err_no_output        = Molimo izaberite odredišnu lokaciju.
+export.err_template_read    = Nije moguće učitati datoteku predloška: {error}
+export.err_failed           = Izvoz nije uspeo: {error}
+export.success_title        = Izvoz završen
+export.success_files        = Uspešno izvezeno {count} datoteka.
+export.success_single       = Uspešno izvezeno {count} stavki u jednu datoteku.
+export.all_diaries          = Svi dnevnici
+export.fmt_month_title      = {month_lc} {year}.
+export.fmt_week_same        = {d1}–{d2}. {month_lc} {year}.
+export.fmt_week_cross       = {d1}. {m1_lc}–{d2}. {m2_lc} {year}.
+export.fmt_week_cross_year  = {d1}. {m1_lc} {y1}.–{d2}. {m2_lc} {y2}.
+
+# ── Rezervna kopija ──────────────────────────────────────────────────────────
+menu.backup                 = &Rezervna kopija...	Ctrl+Shift+B
+menu.backup_help            = Napravi rezervnu kopiju baze podataka dnevnika i podešavanja
+backup.title                = Rezervna kopija dnevnika
+backup.info                 = Pravi šifrovanu rezervnu kopiju svih unosa u dnevniku, beleški, alarma i podešavanja.
+backup.mode_local           = &Lokalna datoteka
+backup.mode_ftp             = &FTP prenos
+backup.local_label          = &Sačuvaj u:
+backup.local_tip            = Fascikla u kojoj će biti sačuvana rezervna kopija
+backup.local_browse         = &Pregledaj...
+backup.local_browse_title   = Izaberite fasciklu za rezervnu kopiju
+backup.ftp_host             = &Host:
+backup.ftp_port             = &Port:
+backup.ftp_user             = &Korisničko ime:
+backup.ftp_password         = &Lozinka:
+backup.ftp_path             = Udaljena &putanja:
+backup.ftp_tls              = &Bezbedna veza (FTPS)
+backup.ftp_remember         = Za&pamti FTP podešavanja
+backup.ftp_pass_note        = FTP lozinka se čuva nešifrovana u settings.ini
+backup.btn_backup           = &Napravi rezervnu kopiju
+backup.err_title            = Rezervna kopija nije uspela
+backup.err_no_output        = Molimo izaberite odredišnu fasciklu.
+backup.err_no_host          = Molimo unesite FTP host.
+backup.err_no_user          = Molimo unesite FTP korisničko ime.
+backup.err_ftp              = FTP greška: {error}
+backup.err_write            = Nije moguće zapisati datoteku rezervne kopije: {error}
+backup.success_title        = Rezervna kopija završena
+backup.success_local        = Rezervna kopija sačuvana u:\n{path}
+backup.success_ftp          = Rezervna kopija otpremljena na {host} ({path})
+
+# ── Prečice ───────────────────────────────────────────────────────────────────
+menu.shortcuts              = Prilagodi p&rečice...
+menu.shortcuts_help         = Uredi tastaturne prečice za stavke menija
+shortcuts.title             = Prilagodi prečice
+shortcuts.col_action        = Radnja
+shortcuts.col_shortcut      = Prečica
+shortcuts.accessible_list   = Tastaturne prečice
+shortcuts.btn_reassign      = P&romeniti...
+shortcuts.btn_reset         = &Vrati na podrazumevano
+shortcuts.conflict_title    = Sukob prečica
+shortcuts.conflict_msg      = {shortcut} je već dodeljen radnji „{action}". Svejedno koristiti?
+shortcuts.capture_title     = Nova prečica
+shortcuts.capture_prompt    = Pritisnite novu kombinaciju tastera za:
+shortcuts.capture_hint      = Pritisnite kombinaciju tastera (Ctrl, Alt ili Shift + taster). Enter za potvrdu. Esc za otkaz.
+
+# ── Date localisation ─────────────────────────────────────────────────────────
+date.month.1                = Januar
+date.month.2                = Februar
+date.month.3                = Mart
+date.month.4                = April
+date.month.5                = Maj
+date.month.6                = Jun
+date.month.7                = Jul
+date.month.8                = Avgust
+date.month.9                = Septembar
+date.month.10               = Oktobar
+date.month.11               = Novembar
+date.month.12               = Decembar
+date.weekday.0              = Ponedeljak
+date.weekday.1              = Utorak
+date.weekday.2              = Sreda
+date.weekday.3              = Četvrtak
+date.weekday.4              = Petak
+date.weekday.5              = Subota
+date.weekday.6              = Nedelja

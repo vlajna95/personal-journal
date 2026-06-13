@@ -1,0 +1,78 @@
+name: Build and release
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  release:
+    runs-on: windows-latest
+    permissions:
+      contents: write   # needed to create releases and push tags
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt pyinstaller
+
+      - name: Cache UPX
+        uses: actions/cache@v4
+        id: cache-upx
+        with:
+          path: tools/upx
+          key: upx-5.2.0-win64
+
+      - name: Download UPX
+        if: steps.cache-upx.outputs.cache-hit != 'true'
+        shell: powershell
+        run: |
+          $dest = "tools\upx"
+          New-Item -ItemType Directory -Force $dest | Out-Null
+          Invoke-WebRequest `
+            "https://github.com/upx/upx/releases/download/v5.2.0/upx-5.2.0-win64.zip" `
+            -OutFile "$dest\upx.zip"
+          Expand-Archive "$dest\upx.zip" -DestinationPath $dest -Force
+          Remove-Item "$dest\upx.zip"
+
+      - name: Build installer
+        shell: powershell
+        run: .\build.ps1 -Installer
+
+      - name: Read version and locate installer
+        id: meta
+        shell: powershell
+        run: |
+          $exe = Get-ChildItem "PersonalJournal-*-setup.exe" | Select-Object -First 1
+          if (-not $exe) { throw "Installer exe not found after build" }
+          $version = $exe.Name -replace 'PersonalJournal-(.+)-setup\.exe', '$1'
+          "VERSION=$version"   >> $env:GITHUB_OUTPUT
+          "INSTALLER=$($exe.Name)" >> $env:GITHUB_OUTPUT
+
+      - name: Remove existing release and tag
+        # Silently succeeds even when no prior release exists
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release delete "v${{ steps.meta.outputs.VERSION }}" --yes || true
+          git push origin --delete "v${{ steps.meta.outputs.VERSION }}"  || true
+
+      - name: Publish release
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "v${{ steps.meta.outputs.VERSION }}" \
+            --title "DP PersonalJournal ${{ steps.meta.outputs.VERSION }}" \
+            --notes "$(printf 'Commit: %s\nBuilt: %s UTC' \
+                '${{ github.sha }}' \
+                "$(date -u +'%Y-%m-%d %H:%M')")" \
+            "${{ steps.meta.outputs.INSTALLER }}"

@@ -1,0 +1,327 @@
+# Personal Journal — Svenska
+lang.name = Svenska
+lang.code = sv
+
+# ── Program ───────────────────────────────────────────────────────────────────
+app.title                   = Personlig Dagbok
+app.err_title               = Fel
+app.err_db_init_failed      = Kunde inte initiera dagboksdatabasen.
+app.err_auth_failed_title   = Autentisering misslyckades
+app.err_auth_failed         = Fel lösenord. {remaining} försök kvar.
+app.err_locked_out_title    = Åtkomst blockerad
+app.err_locked_out          = För många misslyckade försök. Programmet avslutas.
+
+# ── Menyrad ───────────────────────────────────────────────────────────────────
+menu.file                   = &Arkiv
+menu.notes                  = &Anteckningar
+menu.diaries                = &Dagböcker
+menu.new_note               = &Ny anteckning	Ctrl+N
+menu.new_note_help          = Skapa en ny anteckning i dagboken
+menu.new_diary              = &Ny dagbok...	Ctrl+D
+menu.new_diary_help         = Skapa en ny namngiven dagbok
+menu.goto_date              = &Gå till datum...	Ctrl+G
+menu.goto_date_help         = Öppna en kalender för att navigera till en dagbokspost
+menu.manage_diaries         = &Hantera dagböcker...	Ctrl+Shift+D
+menu.manage_diaries_help    = Skapa, byt namn på eller ta bort dagböcker
+menu.exit                   = &Avsluta	Alt+F4
+menu.exit_help              = Avsluta programmet
+menu.language               = &Språk
+
+# ── Huvudfönster ──────────────────────────────────────────────────────────────
+frame.accessible_splitter   = Dagboksdelare
+frame.label_dates           = &Datum med anteckningar:
+frame.accessible_dates      = Datum med anteckningar
+frame.col_date              = Datum
+frame.col_notes_count       = Anteckningar
+frame.label_notes           = &Anteckningar för valt datum:
+frame.accessible_notes      = Anteckningslista
+frame.col_subject           = Ämne
+frame.col_time              = Tid
+frame.label_content         = Anteckningens &innehåll:
+frame.accessible_preview    = Förhandsgranskning av anteckningsinnehåll
+frame.tooltip_preview       = Innehållet i den valda anteckningen (skrivskyddad)
+frame.status_count          = {n} datum med anteckningar
+
+# ── Språkmeny ─────────────────────────────────────────────────────────────────
+lang.changed_title          = Språk ändrat
+lang.changed_msg            = Språket har ändrats. Fönstret laddas om.
+
+# ── Lösenordskonfigurationsdialogruta (första start) ─────────────────────────
+setup.title                 = Ange huvudlösenord
+setup.intro                 = Välkommen till Personlig Dagbok.\nVälj ett huvudlösenord för att kryptera din dagbok.
+setup.label_password        = &Lösenord:
+setup.label_confirm         = Be&kräfta:
+setup.accessible_password   = Lösenord
+setup.accessible_confirm    = Lösenordsbekräftelse
+setup.tooltip_password      = Ange ditt nya huvudlösenord
+setup.tooltip_confirm       = Ange lösenordet igen för bekräftelse
+setup.btn_create            = &Skapa dagbok
+setup.err_validation_title  = Valideringsfel
+setup.err_too_short         = Lösenordet måste vara minst 4 tecken långt.
+setup.err_no_match          = Lösenorden stämmer inte överens. Försök igen.
+
+# ── Upplåsningsdialogruta ─────────────────────────────────────────────────────
+unlock.title                = Lås upp Personlig Dagbok
+unlock.prompt               = Ange ditt huvudlösenord för att låsa upp dagboken:
+unlock.label_password       = &Lösenord:
+unlock.accessible_password  = Lösenord
+unlock.tooltip_password     = Ange ditt huvudlösenord
+unlock.btn_unlock           = &Lås upp
+unlock.btn_exit             = &Avsluta
+unlock.err_required_title   = Obligatoriskt
+unlock.err_enter_password   = Ange ditt lösenord.
+
+# ── Ny anteckningsdialogruta ──────────────────────────────────────────────────
+note.title                  = Ny anteckning
+note.label_date             = Datum: {date}
+note.label_subject          = &Ämne:
+note.label_note             = &Anteckning:
+note.accessible_subject     = Ämne
+note.accessible_note        = Anteckningstext
+note.tooltip_subject        = Ange ett kort ämne för denna anteckning
+note.tooltip_note           = Skriv din dagbokspost här
+note.btn_save               = &Spara anteckning
+note.err_required_title     = Obligatoriskt
+note.err_enter_subject      = Ange ett ämne för anteckningen.
+note.err_enter_content      = Ange text för anteckningen.
+
+# ── Kontextmeny / redigera / ta bort anteckning ───────────────────────────────
+note.ctx_edit               = Redigera anteckning
+note.ctx_delete             = Ta bort anteckning
+note.edit_title             = Redigera anteckning
+note.edit_btn_save          = &Spara ändringar
+note.delete_confirm_title   = Ta bort anteckning
+note.delete_confirm_msg     = Vill du verkligen ta bort "{subject}"? Det går inte att ångra.
+
+# ── Låsskärm ──────────────────────────────────────────────────────────────────
+menu.search                 = &Sök	Ctrl+F
+menu.search_help            = Sök i anteckningar, larm och dagboksposter
+menu.lock                   = &Lås dagbok	Ctrl+Alt+L
+menu.lock_help              = Lås dagboken och dölj dess innehåll
+menu.tray                   = &Minimera till systemfältet	Alt+Shift+F4
+menu.tray_help              = Lås och dölj dagboken i systemfältet
+lock.status                 = Låst
+lock.message                = Dagboken är låst.
+lock.btn_unlock             = Lås upp dagbok
+
+# ── Systemfält ────────────────────────────────────────────────────────────────
+tray.tooltip                = Personlig Dagbok
+tray.restore                = Återställ
+tray.quit                   = Avsluta
+
+# ── Flikar ────────────────────────────────────────────────────────────────────
+tab.notes                   = Anteckningar
+tab.alarms                  = Larm
+tab.diary                   = Dagböcker
+
+# ── Larmmeny ──────────────────────────────────────────────────────────────────
+menu.alarms                 = &Larm
+menu.new_alarm              = &Nytt larm	Ctrl+Shift+N
+menu.new_alarm_help         = Skapa ett nytt larm
+
+# ── Larmlista (huvudfönster) ──────────────────────────────────────────────────
+frame.label_alarms          = &Larm:
+frame.accessible_alarms     = Larmlista
+frame.col_alarm_subject     = Ämne
+frame.col_alarm_note        = Anteckning
+frame.col_alarm_date        = Datum
+frame.col_alarm_time        = Tid
+
+# ── Nytt / redigera larmdialogruta ────────────────────────────────────────────
+alarm.new_title             = Nytt larm
+alarm.edit_title            = Redigera larm
+alarm.label_subject         = &Ämne:
+alarm.label_note            = &Anteckning:
+alarm.label_datetime        = &Datum och tid:
+alarm.accessible_subject    = Ämne
+alarm.accessible_note       = Larmanteckning
+alarm.accessible_date       = Larmdatum
+alarm.accessible_hour       = Timme
+alarm.accessible_minute     = Minut
+alarm.tooltip_subject       = Ange ett kort ämne för detta larm
+alarm.tooltip_note          = Ange en valfri anteckning för detta larm
+alarm.btn_save              = &Spara larm
+alarm.edit_btn_save         = &Spara ändringar
+alarm.err_required_title    = Obligatoriskt
+alarm.err_enter_subject     = Ange ett ämne för larmet.
+alarm.err_past_datetime     = Larmets datum och tid måste vara i framtiden.
+
+# ── Larm utlöst-dialogruta ────────────────────────────────────────────────────
+alarm.fired_title           = Larm
+alarm.fired_locked_msg      = Det finns ett väntande larm.
+alarm.btn_snooze            = &Snooze (Ctrl+Alt+F1)
+alarm.btn_stop              = &Stoppa (Ctrl+Alt+F2)
+alarm.missed_title          = Missade larm
+alarm.missed_msg            = {n} larm var inställda medan programmet var stängt:
+alarm.missed_list_name      = Lista över missade larm
+alarm.missed_col_time       = Inställd tid
+alarm.missed_col_subject    = Ämne
+alarm.missed_snooze         = &Snooze alla
+alarm.missed_dismiss        = &Avfärda alla
+
+# ── Kontextmeny / ta bort larm ────────────────────────────────────────────────
+alarm.ctx_edit              = Redigera larm
+alarm.ctx_delete            = Ta bort larm
+alarm.delete_confirm_title  = Ta bort larm
+alarm.delete_confirm_msg    = Vill du verkligen ta bort "{subject}"? Det går inte att ångra.
+
+# ── Dagboksfliken ─────────────────────────────────────────────────────────────
+diary.label_tree            = &Poster:
+diary.accessible_tree       = Dagboksposter
+diary.label_entry           = &Dagbokspost:
+diary.accessible_entry      = Dagbokspost
+diary.tooltip_entry         = Skriv din dagbokspost för den valda dagen (sparas automatiskt)
+diary.default_name          = Dagbok
+diary.label_selector        = Da&gbok:
+diary.accessible_selector   = Aktiv dagbok
+diary.btn_manage            = &Hantera...
+diary.btn_manage_tip        = Skapa, byt namn på eller ta bort dagböcker
+diary.manage_title          = Hantera dagböcker
+diary.manage_accessible_list= Dagböcker
+diary.btn_new_diary         = &Ny dagbok
+diary.btn_rename_diary      = &Byt namn
+diary.btn_delete_diary      = &Ta bort
+diary.new_diary_title       = Ny dagbok
+diary.new_diary_label       = &Dagbokens namn:
+diary.rename_diary_title    = Byt namn på dagbok
+diary.rename_diary_label    = &Nytt namn:
+diary.delete_confirm_title  = Ta bort dagbok
+diary.delete_confirm_msg    = Ta bort "{name}" och alla dess {n} poster? Det går inte att ångra.
+diary.delete_confirm_last   = Det går inte att ta bort den enda dagboken.
+diary.err_empty_name        = Ange ett namn för dagboken.
+diary.err_name_title        = Namn krävs
+diary.btn_goto_date         = &Gå till datum...
+diary.btn_goto_date_tip     = Öppna en kalender för att navigera till valfritt tidigare datum
+diary.goto_title            = Gå till datum
+diary.goto_label            = &Välj ett datum att öppna (idag eller tidigare):
+diary.goto_accessible_cal   = Datumväljare
+diary.goto_btn_go           = &Gå
+diary.goto_err_title        = Ogiltigt datum
+diary.goto_err_future       = Välj dagens datum eller ett tidigare datum.
+
+# ── Sök ───────────────────────────────────────────────────────────────────────
+search.title                = Sök
+search.label_query          = &Sök:
+search.accessible_query     = Sökterm
+search.tooltip_query        = Ange text för att söka i anteckningar, larm och dagboksposter
+search.btn_search           = &Sök
+search.accessible_results   = Sökresultat
+search.col_type             = Typ
+search.col_title            = Titel
+search.col_preview          = Förhandsgranskning
+search.col_date             = Datum
+search.type_note            = Anteckning
+search.type_alarm           = Larm
+search.type_diary           = Dagbok
+search.results_count        = {n} resultat hittades
+search.no_results           = Inga resultat hittades för "{query}"
+search.ctx_goto_diary       = Gå till dagbokspost
+
+# ── Exportera ─────────────────────────────────────────────────────────────────
+menu.export                 = &Exportera...	Ctrl+E
+menu.export_help            = Exportera dagboksposter eller anteckningar till Markdown-filer
+export.title                = Exportera
+export.source               = Källa
+export.source_diary         = &Dagbok
+export.source_notes         = &Anteckningar
+export.format               = Exportformat
+export.fmt_per_entry        = Ett Pelican-inlägg per &post
+export.fmt_per_week         = Ett Pelican-inlägg per &vecka
+export.fmt_per_month        = Ett Pelican-inlägg per &månad
+export.fmt_single_md        = Enstaka &Markdown-dokument (utan Pelican-huvud)
+export.metadata             = Pelican-metadata
+export.meta_lang            = &Språkkod:
+export.meta_lang_tip        = ISO 639-1 språkkod för Lang-fältet (t.ex. en, sv, no)
+export.meta_tags            = &Taggar:
+export.meta_tags_tip        = Kommaseparerad lista med taggar för Pelicanfältet Tags
+export.meta_series          = &Serienamn:
+export.meta_series_tip      = Valfritt Pelican-serienamn; lämna tomt för att utelämna seriefält
+export.output_label         = &Utdata:
+export.output_tip           = Mapp för export med flera filer eller sökväg för enskilt dokument
+export.btn_browse           = &Bläddra...
+export.btn_export           = &Exportera
+export.browse_folder        = Välj exportmapp
+export.browse_file          = Spara Markdown-fil
+export.template_chk         = Använd anpassad &mall
+export.template_tip         = Mallvariabler: {title} {date} {entry_date} {export_time} {modified} {tags} {summary} {description} {series} {series_index} {trans_id} {lang} {content} {diary_name} {year} {month} {day}
+export.template_browse_title= Öppna mallfil
+export.template_default_btn = &Standard...
+export.template_save_title  = Spara standardmall
+export.err_title            = Exportfel
+export.err_no_output        = Välj en utdataplats.
+export.err_template_read    = Kan inte läsa mallfilen: {error}
+export.err_failed           = Export misslyckades: {error}
+export.success_title        = Export slutförd
+export.success_files        = {count} fil(er) exporterades.
+export.success_single       = {count} objekt exporterades till en enda fil.
+export.all_diaries          = Alla dagböcker
+export.fmt_month_title      = {month} {year}
+export.fmt_week_same        = {d1}–{d2} {month_lc} {year}
+export.fmt_week_cross       = {d1} {m1_lc}–{d2} {m2_lc} {year}
+export.fmt_week_cross_year  = {d1} {m1_lc} {y1}–{d2} {m2_lc} {y2}
+
+# ── Säkerhetskopia ────────────────────────────────────────────────────────────
+menu.backup                 = &Säkerhetskopia...	Ctrl+Shift+B
+menu.backup_help            = Skapa en säkerhetskopia av dagboksdatabasen och inställningarna
+backup.title                = Säkerhetskopiera dagbok
+backup.info                 = Skapar en krypterad säkerhetskopia av alla dagboksposter, anteckningar, larm och inställningar.
+backup.mode_local           = &Lokal fil
+backup.mode_ftp             = &FTP-uppladdning
+backup.local_label          = &Spara i:
+backup.local_tip            = Mapp där säkerhetskopian sparas
+backup.local_browse         = &Bläddra...
+backup.local_browse_title   = Välj mapp för säkerhetskopia
+backup.ftp_host             = &Värd:
+backup.ftp_port             = &Port:
+backup.ftp_user             = &Användarnamn:
+backup.ftp_password         = &Lösenord:
+backup.ftp_path             = &Fjärrsökväg:
+backup.ftp_tls              = &Säker anslutning (FTPS)
+backup.ftp_remember         = Ko&m ihåg FTP-inställningar
+backup.ftp_pass_note        = FTP-lösenordet lagras okrypterat i settings.ini
+backup.btn_backup           = Skapa &säkerhetskopia
+backup.err_title            = Säkerhetskopiering misslyckades
+backup.err_no_output        = Välj en målmapp.
+backup.err_no_host          = Ange en FTP-värd.
+backup.err_no_user          = Ange ett FTP-användarnamn.
+backup.err_ftp              = FTP-fel: {error}
+backup.err_write            = Kunde inte skriva säkerhetskopifilen: {error}
+backup.success_title        = Säkerhetskopiering klar
+backup.success_local        = Säkerhetskopia sparad i:\n{path}
+backup.success_ftp          = Säkerhetskopia uppladdad till {host} ({path})
+
+# ── Genvägar ─────────────────────────────────────────────────────────────────
+menu.shortcuts              = Anpassa &genvägar...
+menu.shortcuts_help         = Redigera tangentbordsgenvägar för menyåtgärder
+shortcuts.title             = Anpassa genvägar
+shortcuts.col_action        = Åtgärd
+shortcuts.col_shortcut      = Genväg
+shortcuts.accessible_list   = Tangentbordsgenvägar
+shortcuts.btn_reassign      = &Tilldela om...
+shortcuts.btn_reset         = Återställ till &standard
+shortcuts.conflict_title    = Genvägskonflikt
+shortcuts.conflict_msg      = {shortcut} är redan tilldelat "{action}". Använd ändå?
+shortcuts.capture_title     = Ny genväg
+shortcuts.capture_prompt    = Tryck på den nya tangentkombinationen för:
+shortcuts.capture_hint      = Tryck en tangentkombination (Ctrl, Alt eller Skift + tangent). Enter för att bekräfta. Esc för att avbryta.
+
+# ── Datumlocalisering ─────────────────────────────────────────────────────────
+date.month.1                = Januari
+date.month.2                = Februari
+date.month.3                = Mars
+date.month.4                = April
+date.month.5                = Maj
+date.month.6                = Juni
+date.month.7                = Juli
+date.month.8                = Augusti
+date.month.9                = September
+date.month.10               = Oktober
+date.month.11               = November
+date.month.12               = December
+date.weekday.0              = Måndag
+date.weekday.1              = Tisdag
+date.weekday.2              = Onsdag
+date.weekday.3              = Torsdag
+date.weekday.4              = Fredag
+date.weekday.5              = Lördag
+date.weekday.6              = Söndag

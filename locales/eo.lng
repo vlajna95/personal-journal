@@ -1,0 +1,327 @@
+# Personal Journal — Esperanto
+lang.name = Esperanto
+lang.code = eo
+
+# ── Aplikaĵo ──────────────────────────────────────────────────────────────────
+app.title                   = Persona Taglibro
+app.err_title               = Eraro
+app.err_db_init_failed      = Ne eblis komenci la datumbazon de la taglibro.
+app.err_auth_failed_title   = Aŭtentikigo malsukcesis
+app.err_auth_failed         = Malĝusta pasvorto. {remaining} provo(j) restanta(j).
+app.err_locked_out_title    = Aliro blokita
+app.err_locked_out          = Tro da malsukcesaj provoj. La aplikaĵo fermiĝos.
+
+# ── Menubreto ─────────────────────────────────────────────────────────────────
+menu.file                   = &Dosiero
+menu.notes                  = &Notoj
+menu.diaries                = &Taglibroj
+menu.new_note               = &Nova noto	Ctrl+N
+menu.new_note_help          = Krei novan noton en la taglibro
+menu.new_diary              = &Nova taglibro...	Ctrl+D
+menu.new_diary_help         = Krei novan taglibron kun nomo
+menu.goto_date              = &Iri al dato...	Ctrl+G
+menu.goto_date_help         = Malfermi kalendaron por navigi al taglibra eniro
+menu.manage_diaries         = &Administri taglibrorojn...	Ctrl+Shift+D
+menu.manage_diaries_help    = Krei, alinomi aŭ forigi taglibrorojn
+menu.exit                   = &Eliri	Alt+F4
+menu.exit_help              = Eliri el la aplikaĵo
+menu.language               = &Lingvo
+
+# ── Ĉefa fenestro ─────────────────────────────────────────────────────────────
+frame.accessible_splitter   = Divid-stango de taglibro
+frame.label_dates           = &Datoj kun notoj:
+frame.accessible_dates      = Datoj kun notoj
+frame.col_date              = Dato
+frame.col_notes_count       = Notoj
+frame.label_notes           = &Notoj por la elektita dato:
+frame.accessible_notes      = Listo de notoj
+frame.col_subject           = Temo
+frame.col_time              = Horo
+frame.label_content         = &Enhavo de la noto:
+frame.accessible_preview    = Antaŭrigardo de enhavo de la noto
+frame.tooltip_preview       = Enhavo de la elektita noto (nur por legado)
+frame.status_count          = {n} dato(j) kun notoj
+
+# ── Lingvo-menuo ──────────────────────────────────────────────────────────────
+lang.changed_title          = Lingvo ŝanĝita
+lang.changed_msg            = La lingvo ŝanĝiĝis. La fenestro reŝarĝiĝos.
+
+# ── Pasvorta agorda dialogo (unua lanĉo) ─────────────────────────────────────
+setup.title                 = Agordi ĉefan pasvorton
+setup.intro                 = Bonvenon al Persona Taglibro.\nBonvolu elekti ĉefan pasvorton por ĉifri vian taglibon.
+setup.label_password        = &Pasvorto:
+setup.label_confirm         = Be&krifto:
+setup.accessible_password   = Pasvorto
+setup.accessible_confirm    = Konfirmo de pasvorto
+setup.tooltip_password      = Enigu vian novan ĉefan pasvorton
+setup.tooltip_confirm       = Denove enigu la pasvorton por konfirmi
+setup.btn_create            = &Krei taglibon
+setup.err_validation_title  = Valumada eraro
+setup.err_too_short         = La pasvorto devas havi almenaŭ 4 signojn.
+setup.err_no_match          = La pasvortoj ne kongruas. Bonvolu reprovi.
+
+# ── Malŝlosa dialogo ──────────────────────────────────────────────────────────
+unlock.title                = Malŝlosi Persona Taglibon
+unlock.prompt               = Enigu vian ĉefan pasvorton por malŝlosi la taglibon:
+unlock.label_password       = &Pasvorto:
+unlock.accessible_password  = Pasvorto
+unlock.tooltip_password     = Enigu vian ĉefan pasvorton
+unlock.btn_unlock           = &Malŝlosi
+unlock.btn_exit             = &Eliri
+unlock.err_required_title   = Bezonata
+unlock.err_enter_password   = Bonvolu enigi vian pasvorton.
+
+# ── Nova nota dialogo ─────────────────────────────────────────────────────────
+note.title                  = Nova noto
+note.label_date             = Dato: {date}
+note.label_subject          = &Temo:
+note.label_note             = &Noto:
+note.accessible_subject     = Temo
+note.accessible_note        = Teksto de la noto
+note.tooltip_subject        = Enigu mallongan temon por ĉi tiu noto
+note.tooltip_note           = Skribu ĉi tie vian enskribon en la taglibon
+note.btn_save               = &Konservi noton
+note.err_required_title     = Bezonata
+note.err_enter_subject      = Bonvolu enigi temon por la noto.
+note.err_enter_content      = Bonvolu enigi tekston por la noto.
+
+# ── Kunteksta menuo / redakti / forigi noton ──────────────────────────────────
+note.ctx_edit               = Redakti noton
+note.ctx_delete             = Forigi noton
+note.edit_title             = Redakti noton
+note.edit_btn_save          = &Konservi ŝanĝojn
+note.delete_confirm_title   = Forigi noton
+note.delete_confirm_msg     = Ĉu vi certe volas forigi "{subject}"? Ĉi tiu ago ne povas esti malfarta.
+
+# ── Ŝlosa ekrano ──────────────────────────────────────────────────────────────
+menu.search                 = &Serĉi	Ctrl+F
+menu.search_help            = Serĉi en notoj, alarmoj kaj taglibroenskriboj
+menu.lock                   = &Ŝlosi taglibon	Ctrl+Alt+L
+menu.lock_help              = Ŝlosi la taglibon kaj kaŝi ĝian enhavon
+menu.tray                   = &Malvastigi al sistema trablo	Alt+Shift+F4
+menu.tray_help              = Ŝlosi kaj kaŝi la taglibon en la sistema trablo
+lock.status                 = Ŝlosita
+lock.message                = La taglibro estas ŝlosita.
+lock.btn_unlock             = Malŝlosi taglibon
+
+# ── Sistema trablo ────────────────────────────────────────────────────────────
+tray.tooltip                = Persona Taglibro
+tray.restore                = Restarigi
+tray.quit                   = Eliri
+
+# ── Langetoj ──────────────────────────────────────────────────────────────────
+tab.notes                   = Notoj
+tab.alarms                  = Alarmoj
+tab.diary                   = Taglibroj
+
+# ── Alarma menuo ──────────────────────────────────────────────────────────────
+menu.alarms                 = &Alarmoj
+menu.new_alarm              = &Nova alarmo	Ctrl+Shift+N
+menu.new_alarm_help         = Krei novan alarmon
+
+# ── Alarma listo (ĉefa fenestro) ──────────────────────────────────────────────
+frame.label_alarms          = &Alarmoj:
+frame.accessible_alarms     = Listo de alarmoj
+frame.col_alarm_subject     = Temo
+frame.col_alarm_note        = Noto
+frame.col_alarm_date        = Dato
+frame.col_alarm_time        = Horo
+
+# ── Nova / redakti alarma dialogo ─────────────────────────────────────────────
+alarm.new_title             = Nova alarmo
+alarm.edit_title            = Redakti alarmon
+alarm.label_subject         = &Temo:
+alarm.label_note            = &Noto:
+alarm.label_datetime        = &Dato kaj horo:
+alarm.accessible_subject    = Temo
+alarm.accessible_note       = Noto de la alarmo
+alarm.accessible_date       = Dato de la alarmo
+alarm.accessible_hour       = Horo
+alarm.accessible_minute     = Minuto
+alarm.tooltip_subject       = Enigu mallongan temon por ĉi tiu alarmo
+alarm.tooltip_note          = Enigu nedevigan noton por ĉi tiu alarmo
+alarm.btn_save              = &Konservi alarmon
+alarm.edit_btn_save         = &Konservi ŝanĝojn
+alarm.err_required_title    = Bezonata
+alarm.err_enter_subject     = Bonvolu enigi temon por la alarmo.
+alarm.err_past_datetime     = La dato kaj horo de la alarmo devas esti en la estonteco.
+
+# ── Ekigita alarma dialogo ────────────────────────────────────────────────────
+alarm.fired_title           = Alarmo
+alarm.fired_locked_msg      = Estas atendanta alarmo.
+alarm.btn_snooze            = &Prokrasti (Ctrl+Alt+F1)
+alarm.btn_stop              = &Ĉesigi (Ctrl+Alt+F2)
+alarm.missed_title          = Preterlasitaj alarmoj
+alarm.missed_msg            = {n} alarmo(j) estis planita(j) dum la aplikaĵo estis fermita:
+alarm.missed_list_name      = Listo de preterlasitaj alarmoj
+alarm.missed_col_time       = Planita horo
+alarm.missed_col_subject    = Temo
+alarm.missed_snooze         = &Prokrasti ĉiujn
+alarm.missed_dismiss        = &Ignori ĉiujn
+
+# ── Kunteksta menuo / forigi alarmon ──────────────────────────────────────────
+alarm.ctx_edit              = Redakti alarmon
+alarm.ctx_delete            = Forigi alarmon
+alarm.delete_confirm_title  = Forigi alarmon
+alarm.delete_confirm_msg    = Ĉu vi certe volas forigi "{subject}"? Ĉi tiu ago ne povas esti malfarta.
+
+# ── Taglibra langeto ──────────────────────────────────────────────────────────
+diary.label_tree            = &Enskriboj:
+diary.accessible_tree       = Taglibraj enskriboj
+diary.label_entry           = &Taglibra enskrebo:
+diary.accessible_entry      = Taglibra enskrebo
+diary.tooltip_entry         = Skribu vian taglibroenskribon por la elektita tago (aŭtomate konservata)
+diary.default_name          = Taglibro
+diary.label_selector        = &Taglibro:
+diary.accessible_selector   = Aktiva taglibro
+diary.btn_manage            = &Administri...
+diary.btn_manage_tip        = Krei, renomi aŭ forigi taglibrolibroj
+diary.manage_title          = Administri taglibroj
+diary.manage_accessible_list= Taglibroj
+diary.btn_new_diary         = &Nova taglibro
+diary.btn_rename_diary      = &Renomi
+diary.btn_delete_diary      = &Forigi
+diary.new_diary_title       = Nova taglibro
+diary.new_diary_label       = &Nomo de taglibro:
+diary.rename_diary_title    = Renomi taglibon
+diary.rename_diary_label    = &Nova nomo:
+diary.delete_confirm_title  = Forigi taglibon
+diary.delete_confirm_msg    = Forigi "{name}" kaj ĉiujn ĝiajn {n} enskribojn? Ĉi tiu ago ne povas esti malfarta.
+diary.delete_confirm_last   = Ne eblas forigi la solan taglibon.
+diary.err_empty_name        = Bonvolu enigi nomon por la taglibro.
+diary.err_name_title        = Nomo bezonata
+diary.btn_goto_date         = &Iri al dato...
+diary.btn_goto_date_tip     = Malfermi kalendaron por navigi al iu ajn pasinta dato
+diary.goto_title            = Iri al dato
+diary.goto_label            = &Elektu daton por malfermi (hodiaŭ aŭ antaŭa):
+diary.goto_accessible_cal   = Data elektilo
+diary.goto_btn_go           = &Iri
+diary.goto_err_title        = Nevalida dato
+diary.goto_err_future       = Bonvolu elekti hodiaŭon aŭ pasintan daton.
+
+# ── Serĉi ─────────────────────────────────────────────────────────────────────
+search.title                = Serĉi
+search.label_query          = &Serĉi:
+search.accessible_query     = Serĉovorto
+search.tooltip_query        = Enigu tekston por serĉi en notoj, alarmoj kaj taglibraj enskriboj
+search.btn_search           = &Serĉi
+search.accessible_results   = Serĉorezultoj
+search.col_type             = Tipo
+search.col_title            = Titolo
+search.col_preview          = Antaŭrigardo
+search.col_date             = Dato
+search.type_note            = Noto
+search.type_alarm           = Alarmo
+search.type_diary           = Taglibro
+search.results_count        = {n} rezultato(j) trovita(j)
+search.no_results           = Neniu rezultato trovita por "{query}"
+search.ctx_goto_diary       = Iri al taglibra enskrebo
+
+# ── Eksporti ──────────────────────────────────────────────────────────────────
+menu.export                 = &Eksporti...	Ctrl+E
+menu.export_help            = Eksporti taglibrajn enskribojn aŭ notojn al Markdown-dosieroj
+export.title                = Eksporti
+export.source               = Fonto
+export.source_diary         = &Taglibro
+export.source_notes         = &Notoj
+export.format               = Eksporta formato
+export.fmt_per_entry        = Unu Pelican-afiŝo por &enskrebo
+export.fmt_per_week         = Unu Pelican-afiŝo por &semajno
+export.fmt_per_month        = Unu Pelican-afiŝo por &monato
+export.fmt_single_md        = Unu&a Markdown-dokumento (sen Pelican-kaplinio)
+export.metadata             = Pelican-metadatenoj
+export.meta_lang            = &Lingvokodo:
+export.meta_lang_tip        = ISO 639-1 lingvokodo por la kampo Lang (ekz. en, eo, fr)
+export.meta_tags            = &Etikedoj:
+export.meta_tags_tip        = Komoseparita listo de etikedoj por la Pelican-kampo Tags
+export.meta_series          = &Serio-nomo:
+export.meta_series_tip      = Nedeviga Pelican-serio-nomo; lasu malplena por preterlasi serioajn kampojn
+export.output_label         = &Eligo:
+export.output_tip           = Dosierujo por pluraj dosieroj aŭ dosiera vojo por unu dokumento
+export.btn_browse           = &Foliumi...
+export.btn_export           = &Eksporti
+export.browse_folder        = Elektu eksportan dosierujon
+export.browse_file          = Konservi Markdown-dosieron
+export.template_chk         = Uzi laŭmendan &ŝablonon
+export.template_tip         = Ŝablonaj variabloj: {title} {date} {entry_date} {export_time} {modified} {tags} {summary} {description} {series} {series_index} {trans_id} {lang} {content} {diary_name} {year} {month} {day}
+export.template_browse_title= Malfermi ŝablonan dosieron
+export.template_default_btn = &Defaŭlta...
+export.template_save_title  = Konservi defaŭltan ŝablonon
+export.err_title            = Eksporta eraro
+export.err_no_output        = Bonvolu elekti eligan lokon.
+export.err_template_read    = Ne eblas legi la ŝablonan dosieron: {error}
+export.err_failed           = Eksportado malsukcesis: {error}
+export.success_title        = Eksportado finita
+export.success_files        = {count} dosiero(j) sukcese eksportita(j).
+export.success_single       = {count} elemento(j) sukcese eksportita(j) en unu dosieron.
+export.all_diaries          = Ĉiuj taglibroj
+export.fmt_month_title      = {month} {year}
+export.fmt_week_same        = {d1}–{d2} {month_lc} {year}
+export.fmt_week_cross       = {d1} {m1_lc}–{d2} {m2_lc} {year}
+export.fmt_week_cross_year  = {d1} {m1_lc} {y1}–{d2} {m2_lc} {y2}
+
+# ── Sekurkopio ────────────────────────────────────────────────────────────────
+menu.backup                 = &Sekurkopio...	Ctrl+Shift+B
+menu.backup_help            = Krei sekurkopion de la taglibra datumbazo kaj agordoj
+backup.title                = Sekurkopio de taglibro
+backup.info                 = Kreas ĉifritan sekurkopion de ĉiuj taglibraj enskriboj, notoj, alarmoj kaj agordoj.
+backup.mode_local           = &Loka dosiero
+backup.mode_ftp             = &FTP-alŝuto
+backup.local_label          = &Konservi en:
+backup.local_tip            = Dosierujo kie la sekurkopiodosiero estos konservita
+backup.local_browse         = F&oliumi...
+backup.local_browse_title   = Elektu dosierujon por sekurkopio
+backup.ftp_host             = &Gastigi:
+backup.ftp_port             = &Pordo:
+backup.ftp_user             = &Uzantonomo:
+backup.ftp_password         = &Pasvorto:
+backup.ftp_path             = Malproksima &vojo:
+backup.ftp_tls              = &Sekura konekto (FTPS)
+backup.ftp_remember         = &Memori FTP-agordojn
+backup.ftp_pass_note        = FTP-pasvorto estas konservita netxifrite en settings.ini
+backup.btn_backup           = Krei &sekurkopion
+backup.err_title            = Sekurkopio malsukcesis
+backup.err_no_output        = Bonvolu elekti celkosierujon.
+backup.err_no_host          = Bonvolu enigi FTP-gastiganton.
+backup.err_no_user          = Bonvolu enigi FTP-uzantonomon.
+backup.err_ftp              = FTP-eraro: {error}
+backup.err_write            = Ne eblas skribi la sekurkopiodosieron: {error}
+backup.success_title        = Sekurkopio preta
+backup.success_local        = Sekurkopio konservita en:\n{path}
+backup.success_ftp          = Sekurkopio alŝutita al {host} ({path})
+
+# ── Mallongigoj ──────────────────────────────────────────────────────────────
+menu.shortcuts              = Agordi &mallongigojn...
+menu.shortcuts_help         = Redakti klavajn mallongigojn por menuagoj
+shortcuts.title             = Agordi mallongigojn
+shortcuts.col_action        = Ago
+shortcuts.col_shortcut      = Mallongigo
+shortcuts.accessible_list   = Klavaj mallongigoj
+shortcuts.btn_reassign      = &Rerasigni...
+shortcuts.btn_reset         = Restarigi al &defaŭlto
+shortcuts.conflict_title    = Konflikto de mallongigo
+shortcuts.conflict_msg      = {shortcut} jam estas asignita al "{action}". Uzi ĝin tamen?
+shortcuts.capture_title     = Nova mallongigo
+shortcuts.capture_prompt    = Premu la novan klavkombinaĵon por:
+shortcuts.capture_hint      = Premu klavkombinaĵon (Ctrl, Alt aŭ Majusko + klavo). Enter por konfirmi. Esc por nuligi.
+
+# ── Data-lokalaĵigo ───────────────────────────────────────────────────────────
+date.month.1                = Januaro
+date.month.2                = Februaro
+date.month.3                = Marto
+date.month.4                = Aprilo
+date.month.5                = Majo
+date.month.6                = Junio
+date.month.7                = Julio
+date.month.8                = Aŭgusto
+date.month.9                = Septembro
+date.month.10               = Oktobro
+date.month.11               = Novembro
+date.month.12               = Decembro
+date.weekday.0              = Lundo
+date.weekday.1              = Mardo
+date.weekday.2              = Merkredo
+date.weekday.3              = Ĵaŭdo
+date.weekday.4              = Vendredo
+date.weekday.5              = Sabato
+date.weekday.6              = Dimanĉo

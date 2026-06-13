@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# PyInstaller
+*.spec
+build/
+dist/
+
+# App data (generated at runtime)
+*.ini
+*.db
+*.ogg
+!sounds/alarm.ogg
+
+# Binaries produced by build
+*.exe
+
+# Third-party build tools (download separately — see build.ps1)
+tools/
+
+# Jekyll (GitHub Pages)
+docs/_site/
+docs/.jekyll-cache/
+docs/.jekyll-metadata
+Gemfile.lock
+
+# IDE / tools
+.claude/
+.pytest_cache/

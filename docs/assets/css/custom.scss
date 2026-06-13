@@ -1,0 +1,22 @@
+---
+---
+
+// Make key-reference tables more compact
+.site-content table td:first-child code {
+  white-space: nowrap;
+}
+
+// Warning / tip callouts (just-the-docs v0.10+ uses these classes)
+.warning {
+  border-left: 4px solid #e74c3c;
+  background: #fdf2f2;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}
+
+.tip {
+  border-left: 4px solid #2ecc71;
+  background: #f2fdf6;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}

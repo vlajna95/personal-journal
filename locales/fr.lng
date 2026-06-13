@@ -1,0 +1,327 @@
+# Personal Journal — Français
+lang.name = Français
+lang.code = fr
+
+# ── Application ───────────────────────────────────────────────────────────────
+app.title                   = Journal Personnel
+app.err_title               = Erreur
+app.err_db_init_failed      = Impossible d'initialiser la base de données du journal.
+app.err_auth_failed_title   = Échec de l'authentification
+app.err_auth_failed         = Mot de passe incorrect. {remaining} tentative(s) restante(s).
+app.err_locked_out_title    = Accès bloqué
+app.err_locked_out          = Trop de tentatives échouées. L'application va se fermer.
+
+# ── Barre de menus ────────────────────────────────────────────────────────────
+menu.file                   = &Fichier
+menu.notes                  = &Notes
+menu.diaries                = &Journaux
+menu.new_note               = &Nouvelle note	Ctrl+N
+menu.new_note_help          = Créer une nouvelle note dans le journal
+menu.new_diary              = &Nouveau journal...	Ctrl+D
+menu.new_diary_help         = Créer un nouveau journal avec un nom
+menu.goto_date              = &Aller à la date...	Ctrl+G
+menu.goto_date_help         = Ouvrir un calendrier pour naviguer vers une entrée du journal
+menu.manage_diaries         = &Gérer les journaux...	Ctrl+Shift+D
+menu.manage_diaries_help    = Créer, renommer ou supprimer des journaux
+menu.exit                   = &Quitter	Alt+F4
+menu.exit_help              = Quitter l'application
+menu.language               = &Langue
+
+# ── Fenêtre principale ────────────────────────────────────────────────────────
+frame.accessible_splitter   = Séparateur du journal
+frame.label_dates           = &Dates avec des notes :
+frame.accessible_dates      = Dates avec des notes
+frame.col_date              = Date
+frame.col_notes_count       = Notes
+frame.label_notes           = &Notes pour la date sélectionnée :
+frame.accessible_notes      = Liste des notes
+frame.col_subject           = Objet
+frame.col_time              = Heure
+frame.label_content         = &Contenu de la note :
+frame.accessible_preview    = Aperçu du contenu de la note
+frame.tooltip_preview       = Contenu de la note sélectionnée (lecture seule)
+frame.status_count          = {n} date(s) avec des notes
+
+# ── Menu de langue ────────────────────────────────────────────────────────────
+lang.changed_title          = Langue modifiée
+lang.changed_msg            = La langue a été modifiée. La fenêtre va être rechargée.
+
+# ── Boîte de dialogue de configuration du mot de passe (premier démarrage) ───
+setup.title                 = Définir le mot de passe principal
+setup.intro                 = Bienvenue dans Journal Personnel.\nVeuillez choisir un mot de passe principal pour chiffrer votre journal.
+setup.label_password        = &Mot de passe :
+setup.label_confirm         = Con&firmation :
+setup.accessible_password   = Mot de passe
+setup.accessible_confirm    = Confirmation du mot de passe
+setup.tooltip_password      = Entrez votre nouveau mot de passe principal
+setup.tooltip_confirm       = Entrez à nouveau le mot de passe pour confirmer
+setup.btn_create            = &Créer le journal
+setup.err_validation_title  = Erreur de validation
+setup.err_too_short         = Le mot de passe doit comporter au moins 4 caractères.
+setup.err_no_match          = Les mots de passe ne correspondent pas. Veuillez réessayer.
+
+# ── Boîte de dialogue de déverrouillage ───────────────────────────────────────
+unlock.title                = Déverrouiller Journal Personnel
+unlock.prompt               = Entrez votre mot de passe principal pour déverrouiller le journal :
+unlock.label_password       = &Mot de passe :
+unlock.accessible_password  = Mot de passe
+unlock.tooltip_password     = Entrez votre mot de passe principal
+unlock.btn_unlock           = &Déverrouiller
+unlock.btn_exit             = &Quitter
+unlock.err_required_title   = Obligatoire
+unlock.err_enter_password   = Veuillez entrer votre mot de passe.
+
+# ── Boîte de dialogue nouvelle note ──────────────────────────────────────────
+note.title                  = Nouvelle note
+note.label_date             = Date : {date}
+note.label_subject          = &Objet :
+note.label_note             = &Note :
+note.accessible_subject     = Objet
+note.accessible_note        = Texte de la note
+note.tooltip_subject        = Entrez un bref objet pour cette note
+note.tooltip_note           = Rédigez ici votre entrée de journal
+note.btn_save               = &Enregistrer la note
+note.err_required_title     = Obligatoire
+note.err_enter_subject      = Veuillez entrer un objet pour la note.
+note.err_enter_content      = Veuillez entrer le texte de la note.
+
+# ── Menu contextuel / modifier / supprimer une note ───────────────────────────
+note.ctx_edit               = Modifier la note
+note.ctx_delete             = Supprimer la note
+note.edit_title             = Modifier la note
+note.edit_btn_save          = &Enregistrer les modifications
+note.delete_confirm_title   = Supprimer la note
+note.delete_confirm_msg     = Voulez-vous vraiment supprimer « {subject} » ? Cette action est irréversible.
+
+# ── Écran de verrouillage ─────────────────────────────────────────────────────
+menu.search                 = &Rechercher	Ctrl+F
+menu.search_help            = Rechercher dans les notes, rappels et entrées du journal
+menu.lock                   = &Verrouiller le journal	Ctrl+Alt+L
+menu.lock_help              = Verrouiller le journal et masquer son contenu
+menu.tray                   = &Réduire dans la zone de notification	Alt+Shift+F4
+menu.tray_help              = Verrouiller et masquer le journal dans la zone de notification
+lock.status                 = Verrouillé
+lock.message                = Le journal est verrouillé.
+lock.btn_unlock             = Déverrouiller le journal
+
+# ── Zone de notification ──────────────────────────────────────────────────────
+tray.tooltip                = Journal Personnel
+tray.restore                = Restaurer
+tray.quit                   = Quitter
+
+# ── Onglets ───────────────────────────────────────────────────────────────────
+tab.notes                   = Notes
+tab.alarms                  = Rappels
+tab.diary                   = Journaux
+
+# ── Menu des rappels ──────────────────────────────────────────────────────────
+menu.alarms                 = &Rappels
+menu.new_alarm              = &Nouveau rappel	Ctrl+Shift+N
+menu.new_alarm_help         = Créer un nouveau rappel
+
+# ── Liste des rappels (fenêtre principale) ────────────────────────────────────
+frame.label_alarms          = &Rappels :
+frame.accessible_alarms     = Liste des rappels
+frame.col_alarm_subject     = Objet
+frame.col_alarm_note        = Note
+frame.col_alarm_date        = Date
+frame.col_alarm_time        = Heure
+
+# ── Boîte de dialogue nouveau / modifier un rappel ────────────────────────────
+alarm.new_title             = Nouveau rappel
+alarm.edit_title            = Modifier le rappel
+alarm.label_subject         = &Objet :
+alarm.label_note            = &Note :
+alarm.label_datetime        = &Date et heure :
+alarm.accessible_subject    = Objet
+alarm.accessible_note       = Note du rappel
+alarm.accessible_date       = Date du rappel
+alarm.accessible_hour       = Heure
+alarm.accessible_minute     = Minute
+alarm.tooltip_subject       = Entrez un bref objet pour ce rappel
+alarm.tooltip_note          = Entrez une note facultative pour ce rappel
+alarm.btn_save              = &Enregistrer le rappel
+alarm.edit_btn_save         = &Enregistrer les modifications
+alarm.err_required_title    = Obligatoire
+alarm.err_enter_subject     = Veuillez entrer un objet pour le rappel.
+alarm.err_past_datetime     = La date et l'heure du rappel doivent être dans le futur.
+
+# ── Boîte de dialogue rappel déclenché ───────────────────────────────────────
+alarm.fired_title           = Rappel
+alarm.fired_locked_msg      = Un rappel est en attente.
+alarm.btn_snooze            = &Répéter (Ctrl+Alt+F1)
+alarm.btn_stop              = &Arrêter (Ctrl+Alt+F2)
+alarm.missed_title          = Rappels manqués
+alarm.missed_msg            = {n} rappel(s) étaient programmés pendant que l'application était fermée :
+alarm.missed_list_name      = Liste des rappels manqués
+alarm.missed_col_time       = Heure programmée
+alarm.missed_col_subject    = Objet
+alarm.missed_snooze         = &Répéter tous
+alarm.missed_dismiss        = &Ignorer tous
+
+# ── Menu contextuel / supprimer un rappel ─────────────────────────────────────
+alarm.ctx_edit              = Modifier le rappel
+alarm.ctx_delete            = Supprimer le rappel
+alarm.delete_confirm_title  = Supprimer le rappel
+alarm.delete_confirm_msg    = Voulez-vous vraiment supprimer « {subject} » ? Cette action est irréversible.
+
+# ── Onglet Journal ────────────────────────────────────────────────────────────
+diary.label_tree            = &Entrées :
+diary.accessible_tree       = Entrées du journal
+diary.label_entry           = &Entrée du journal :
+diary.accessible_entry      = Entrée du journal
+diary.tooltip_entry         = Rédigez votre entrée de journal pour le jour sélectionné (enregistrement automatique)
+diary.default_name          = Journal
+diary.label_selector        = &Journal :
+diary.accessible_selector   = Journal actif
+diary.btn_manage            = &Gérer…
+diary.btn_manage_tip        = Créer, renommer ou supprimer des journaux
+diary.manage_title          = Gérer les journaux
+diary.manage_accessible_list= Journaux
+diary.btn_new_diary         = &Nouveau journal
+diary.btn_rename_diary      = &Renommer
+diary.btn_delete_diary      = &Supprimer
+diary.new_diary_title       = Nouveau journal
+diary.new_diary_label       = &Nom du journal :
+diary.rename_diary_title    = Renommer le journal
+diary.rename_diary_label    = &Nouveau nom :
+diary.delete_confirm_title  = Supprimer le journal
+diary.delete_confirm_msg    = Supprimer « {name} » et ses {n} entrées ? Cette action est irréversible.
+diary.delete_confirm_last   = Impossible de supprimer le seul journal.
+diary.err_empty_name        = Veuillez entrer un nom pour le journal.
+diary.err_name_title        = Nom obligatoire
+diary.btn_goto_date         = &Aller à la date…
+diary.btn_goto_date_tip     = Ouvrir un calendrier pour naviguer vers n'importe quelle date passée
+diary.goto_title            = Aller à la date
+diary.goto_label            = &Sélectionnez une date à ouvrir (aujourd'hui ou antérieure) :
+diary.goto_accessible_cal   = Sélecteur de date
+diary.goto_btn_go           = &Aller
+diary.goto_err_title        = Date invalide
+diary.goto_err_future       = Veuillez sélectionner aujourd'hui ou une date passée.
+
+# ── Recherche ─────────────────────────────────────────────────────────────────
+search.title                = Rechercher
+search.label_query          = &Rechercher :
+search.accessible_query     = Terme de recherche
+search.tooltip_query        = Entrez du texte pour rechercher dans les notes, rappels et entrées du journal
+search.btn_search           = &Rechercher
+search.accessible_results   = Résultats de la recherche
+search.col_type             = Type
+search.col_title            = Titre
+search.col_preview          = Aperçu
+search.col_date             = Date
+search.type_note            = Note
+search.type_alarm           = Rappel
+search.type_diary           = Journal
+search.results_count        = {n} résultat(s) trouvé(s)
+search.no_results           = Aucun résultat trouvé pour « {query} »
+search.ctx_goto_diary       = Aller à l'entrée du journal
+
+# ── Exporter ──────────────────────────────────────────────────────────────────
+menu.export                 = &Exporter…	Ctrl+E
+menu.export_help            = Exporter des entrées de journal ou des notes vers des fichiers Markdown
+export.title                = Exporter
+export.source               = Source
+export.source_diary         = &Journal
+export.source_notes         = &Notes
+export.format               = Format d'exportation
+export.fmt_per_entry        = Un article Pelican par &entrée
+export.fmt_per_week         = Un article Pelican par &semaine
+export.fmt_per_month        = Un article Pelican par &mois
+export.fmt_single_md        = &Document Markdown unique (sans en-tête Pelican)
+export.metadata             = Métadonnées Pelican
+export.meta_lang            = &Code de langue :
+export.meta_lang_tip        = Code de langue ISO 639-1 pour le champ Lang (ex. en, fr, es)
+export.meta_tags            = &Étiquettes :
+export.meta_tags_tip        = Liste d'étiquettes séparées par des virgules pour le champ Tags de Pelican
+export.meta_series          = &Nom de la série :
+export.meta_series_tip      = Nom de série Pelican facultatif ; laisser vide pour omettre les champs de série
+export.output_label         = &Sortie :
+export.output_tip           = Dossier pour les exportations multi-fichiers ou chemin pour un document unique
+export.btn_browse           = &Parcourir…
+export.btn_export           = &Exporter
+export.browse_folder        = Sélectionner le dossier d'exportation
+export.browse_file          = Enregistrer le fichier Markdown
+export.template_chk         = Utiliser un &modèle personnalisé
+export.template_tip         = Variables de modèle : {title} {date} {entry_date} {export_time} {modified} {tags} {summary} {description} {series} {series_index} {trans_id} {lang} {content} {diary_name} {year} {month} {day}
+export.template_browse_title= Ouvrir le fichier de modèle
+export.template_default_btn = &Par défaut…
+export.template_save_title  = Enregistrer le modèle par défaut
+export.err_title            = Erreur d'exportation
+export.err_no_output        = Veuillez sélectionner un emplacement de sortie.
+export.err_template_read    = Impossible de lire le fichier de modèle : {error}
+export.err_failed           = L'exportation a échoué : {error}
+export.success_title        = Exportation terminée
+export.success_files        = {count} fichier(s) exporté(s) avec succès.
+export.success_single       = {count} élément(s) exporté(s) avec succès dans un seul fichier.
+export.all_diaries          = Tous les journaux
+export.fmt_month_title      = {month} {year}
+export.fmt_week_same        = {d1}–{d2} {month_lc} {year}
+export.fmt_week_cross       = {d1} {m1_lc}–{d2} {m2_lc} {year}
+export.fmt_week_cross_year  = {d1} {m1_lc} {y1}–{d2} {m2_lc} {y2}
+
+# ── Sauvegarde ────────────────────────────────────────────────────────────────
+menu.backup                 = &Sauvegarde...	Ctrl+Shift+B
+menu.backup_help            = Créer une sauvegarde de la base de données du journal et des paramètres
+backup.title                = Sauvegarder le journal
+backup.info                 = Crée une sauvegarde chiffrée de toutes les entrées du journal, notes, rappels et paramètres.
+backup.mode_local           = Fichier &local
+backup.mode_ftp             = Envoi par &FTP
+backup.local_label          = &Enregistrer dans :
+backup.local_tip            = Dossier où le fichier de sauvegarde sera enregistré
+backup.local_browse         = &Parcourir…
+backup.local_browse_title   = Sélectionner le dossier de sauvegarde
+backup.ftp_host             = &Hôte :
+backup.ftp_port             = &Port :
+backup.ftp_user             = &Identifiant :
+backup.ftp_password         = Mot de &passe :
+backup.ftp_path             = Chemin &distant :
+backup.ftp_tls              = Connexion &sécurisée (FTPS)
+backup.ftp_remember         = &Mémoriser les paramètres FTP
+backup.ftp_pass_note        = Le mot de passe FTP est stocké non chiffré dans settings.ini
+backup.btn_backup           = &Créer la sauvegarde
+backup.err_title            = Échec de la sauvegarde
+backup.err_no_output        = Veuillez sélectionner un dossier de destination.
+backup.err_no_host          = Veuillez entrer un hôte FTP.
+backup.err_no_user          = Veuillez entrer un identifiant FTP.
+backup.err_ftp              = Erreur FTP : {error}
+backup.err_write            = Impossible d'écrire le fichier de sauvegarde : {error}
+backup.success_title        = Sauvegarde terminée
+backup.success_local        = Sauvegarde enregistrée dans :\n{path}
+backup.success_ftp          = Sauvegarde envoyée sur {host} ({path})
+
+# ── Raccourcis ────────────────────────────────────────────────────────────────
+menu.shortcuts              = Personnaliser les &raccourcis...
+menu.shortcuts_help         = Modifier les raccourcis clavier pour les actions du menu
+shortcuts.title             = Personnaliser les raccourcis
+shortcuts.col_action        = Action
+shortcuts.col_shortcut      = Raccourci
+shortcuts.accessible_list   = Raccourcis clavier
+shortcuts.btn_reassign      = &Réassigner...
+shortcuts.btn_reset         = Rétablir la valeur &par défaut
+shortcuts.conflict_title    = Conflit de raccourci
+shortcuts.conflict_msg      = {shortcut} est déjà attribué à « {action} ». L'utiliser quand même ?
+shortcuts.capture_title     = Nouveau raccourci
+shortcuts.capture_prompt    = Appuyez sur la nouvelle combinaison de touches pour :
+shortcuts.capture_hint      = Appuyez sur une combinaison de touches (Ctrl, Alt ou Maj + touche). Entrée pour confirmer. Échap pour annuler.
+
+# ── Localisation des dates ────────────────────────────────────────────────────
+date.month.1                = Janvier
+date.month.2                = Février
+date.month.3                = Mars
+date.month.4                = Avril
+date.month.5                = Mai
+date.month.6                = Juin
+date.month.7                = Juillet
+date.month.8                = Août
+date.month.9                = Septembre
+date.month.10               = Octobre
+date.month.11               = Novembre
+date.month.12               = Décembre
+date.weekday.0              = Lundi
+date.weekday.1              = Mardi
+date.weekday.2              = Mercredi
+date.weekday.3              = Jeudi
+date.weekday.4              = Vendredi
+date.weekday.5              = Samedi
+date.weekday.6              = Dimanche

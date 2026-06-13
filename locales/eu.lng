@@ -1,0 +1,327 @@
+# Personal Journal — Euskera
+lang.name = Euskera
+lang.code = eu
+
+# ── Aplikazioa ────────────────────────────────────────────────────────────────
+app.title                   = Egunkari Pertsonala
+app.err_title               = Errorea
+app.err_db_init_failed      = Ezin izan da egunkariaren datu-basea hasieratu.
+app.err_auth_failed_title   = Autentifikazioa huts egin du
+app.err_auth_failed         = Pasahitz okerra. {remaining} saiakera geratzen dira.
+app.err_locked_out_title    = Blokeatuta
+app.err_locked_out          = Saiakera gehiegi egin dira. Aplikazioa itxiko da.
+
+# ── Menu-barra ────────────────────────────────────────────────────────────────
+menu.file                   = &Fitxategia
+menu.notes                  = &Oharrak
+menu.diaries                = &Egunkariak
+menu.new_note               = &Ohar berria	Ctrl+N
+menu.new_note_help          = Egunkarian ohar berri bat sortu
+menu.new_diary              = Egunkari &berria...	Ctrl+D
+menu.new_diary_help         = Izendatutako egunkari berri bat sortu
+menu.goto_date              = &Joan datara...	Ctrl+G
+menu.goto_date_help         = Egunkari-sarrera bati nabigatzeko egutegia ireki
+menu.manage_diaries         = &Kudeatu egunkariak...	Ctrl+Shift+D
+menu.manage_diaries_help    = Egunkariak sortu, berrizendatu edo ezabatu
+menu.exit                   = &Irten	Alt+F4
+menu.exit_help              = Aplikaziotik irten
+menu.language               = &Hizkuntza
+
+# ── Leiho nagusia ─────────────────────────────────────────────────────────────
+frame.accessible_splitter   = Egunkariaren banatzailea
+frame.label_dates           = Oharrak dituzten &datak:
+frame.accessible_dates      = Oharrak dituzten datak
+frame.col_date              = Data
+frame.col_notes_count       = Oharrak
+frame.label_notes           = Hautatutako dataren &oharrak:
+frame.accessible_notes      = Oharren zerrenda
+frame.col_subject           = Gaia
+frame.col_time              = Ordua
+frame.label_content         = Oharraren &edukia:
+frame.accessible_preview    = Oharraren edukiaren aurrebista
+frame.tooltip_preview       = Hautatutako oharraren edukia (irakurtzeko soilik)
+frame.status_count          = {n} data oharrekin
+
+# ── Hizkuntza-menua ───────────────────────────────────────────────────────────
+lang.changed_title          = Hizkuntza aldatu da
+lang.changed_msg            = Hizkuntza aldatu da. Leihoa berriz kargatzen.
+
+# ── Pasahitzaren konfigurazio-elkarrizketa (lehen abioa) ─────────────────────
+setup.title                 = Ezarri pasahitz nagusia
+setup.intro                 = Ongi etorri Egunkari Pertsonalera.\nMesedez, aukeratu pasahitz nagusi bat egunkaria zifratzeko.
+setup.label_password        = &Pasahitza:
+setup.label_confirm         = Be&rretsi:
+setup.accessible_password   = Pasahitza
+setup.accessible_confirm    = Pasahitzaren berrespena
+setup.tooltip_password      = Idatzi zure pasahitz nagusia
+setup.tooltip_confirm       = Berriz idatzi pasahitza berresteko
+setup.btn_create            = &Sortu egunkaria
+setup.err_validation_title  = Balioztapen errorea
+setup.err_too_short         = Pasahitzak gutxienez 4 karaktere izan behar ditu.
+setup.err_no_match          = Pasahitzak ez datoz bat. Saiatu berriro.
+
+# ── Desblokeatze-elkarrizketa ─────────────────────────────────────────────────
+unlock.title                = Desblokea Egunkari Pertsonala
+unlock.prompt               = Idatzi zure pasahitz nagusia egunkaria desblokatzeko:
+unlock.label_password       = &Pasahitza:
+unlock.accessible_password  = Pasahitza
+unlock.tooltip_password     = Idatzi zure pasahitz nagusia
+unlock.btn_unlock           = &Desblokatu
+unlock.btn_exit             = &Irten
+unlock.err_required_title   = Beharrezkoa
+unlock.err_enter_password   = Mesedez, idatzi zure pasahitza.
+
+# ── Ohar berriaren elkarrizketa ───────────────────────────────────────────────
+note.title                  = Ohar berria
+note.label_date             = Data: {date}
+note.label_subject          = &Gaia:
+note.label_note             = &Oharra:
+note.accessible_subject     = Gaia
+note.accessible_note        = Oharraren testua
+note.tooltip_subject        = Idatzi ohar honen gai laburra
+note.tooltip_note           = Idatzi hemen zure egunkari-sarrera
+note.btn_save               = &Gorde oharra
+note.err_required_title     = Beharrezkoa
+note.err_enter_subject      = Mesedez, idatzi oharraren gaia.
+note.err_enter_content      = Mesedez, idatzi oharraren testua.
+
+# ── Oharraren menu-testuingurua / editatu / ezabatu ──────────────────────────
+note.ctx_edit               = Editatu oharra
+note.ctx_delete             = Ezabatu oharra
+note.edit_title             = Editatu oharra
+note.edit_btn_save          = &Gorde aldaketak
+note.delete_confirm_title   = Ezabatu oharra
+note.delete_confirm_msg     = Ziur zaude "{subject}" ezabatu nahi duzula? Ezin da desegin.
+
+# ── Blokeo-pantaila ───────────────────────────────────────────────────────────
+menu.search                 = &Bilatu	Ctrl+F
+menu.search_help            = Bilatu oharrak, alarmak eta egunkari-sarrerak
+menu.lock                   = &Blokeatu egunkaria	Ctrl+Alt+L
+menu.lock_help              = Blokeatu egunkaria eta ezkutatu bere edukia
+menu.tray                   = &Txikiatu sistema-erretilura	Alt+Shift+F4
+menu.tray_help              = Blokeatu eta ezkutatu egunkaria sistema-erretilura
+lock.status                 = Blokeatuta
+lock.message                = Egunkaria blokeatuta dago.
+lock.btn_unlock             = Desblokatu egunkaria
+
+# ── Sistema-erretilua ─────────────────────────────────────────────────────────
+tray.tooltip                = Egunkari Pertsonala
+tray.restore                = Leheneratu
+tray.quit                   = Irten
+
+# ── Fitxak ────────────────────────────────────────────────────────────────────
+tab.notes                   = Oharrak
+tab.alarms                  = Alarmak
+tab.diary                   = Egunkariak
+
+# ── Alarmen menua ─────────────────────────────────────────────────────────────
+menu.alarms                 = &Alarmak
+menu.new_alarm              = Alarma &berria	Ctrl+Shift+N
+menu.new_alarm_help         = Sortu alarma berri bat
+
+# ── Alarmen zerrenda (leiho nagusia) ──────────────────────────────────────────
+frame.label_alarms          = &Alarmak:
+frame.accessible_alarms     = Alarmen zerrenda
+frame.col_alarm_subject     = Gaia
+frame.col_alarm_note        = Oharra
+frame.col_alarm_date        = Data
+frame.col_alarm_time        = Ordua
+
+# ── Alarma berri / editatu elkarrizketa ───────────────────────────────────────
+alarm.new_title             = Alarma berria
+alarm.edit_title            = Editatu alarma
+alarm.label_subject         = &Gaia:
+alarm.label_note            = &Oharra:
+alarm.label_datetime        = &Data eta ordua:
+alarm.accessible_subject    = Gaia
+alarm.accessible_note       = Alarmaren oharra
+alarm.accessible_date       = Alarmaren data
+alarm.accessible_hour       = Ordua
+alarm.accessible_minute     = Minutua
+alarm.tooltip_subject       = Idatzi alarma honen gai laburra
+alarm.tooltip_note          = Idatzi alarma honen aukerako oharra
+alarm.btn_save              = &Gorde alarma
+alarm.edit_btn_save         = &Gorde aldaketak
+alarm.err_required_title    = Beharrezkoa
+alarm.err_enter_subject     = Mesedez, idatzi alarmaren gaia.
+alarm.err_past_datetime     = Alarmaren data eta ordua etorkizunekoa izan behar da.
+
+# ── Alarma aktibatutako elkarrizketa ──────────────────────────────────────────
+alarm.fired_title           = Alarma
+alarm.fired_locked_msg      = Alarma bat zain dago.
+alarm.btn_snooze            = &Atzeratu (Ctrl+Alt+F1)
+alarm.btn_stop              = &Gelditu (Ctrl+Alt+F2)
+alarm.missed_title          = Galdu diren alarmak
+alarm.missed_msg            = {n} alarma programatuta zeuden aplikazioa itxita zegoen bitartean:
+alarm.missed_list_name      = Galdu diren alarmen zerrenda
+alarm.missed_col_time       = Programatutako ordua
+alarm.missed_col_subject    = Gaia
+alarm.missed_snooze         = &Atzeratu guztiak
+alarm.missed_dismiss        = &Baztertu guztiak
+
+# ── Alarmaren menu-testuingurua / ezabatu ─────────────────────────────────────
+alarm.ctx_edit              = Editatu alarma
+alarm.ctx_delete            = Ezabatu alarma
+alarm.delete_confirm_title  = Ezabatu alarma
+alarm.delete_confirm_msg    = Ziur zaude "{subject}" ezabatu nahi duzula? Ezin da desegin.
+
+# ── Egunkaria fitxa ───────────────────────────────────────────────────────────
+diary.label_tree            = &Sarrerak:
+diary.accessible_tree       = Egunkari-sarrerak
+diary.label_entry           = &Egunkari-sarrera:
+diary.accessible_entry      = Egunkari-sarrera
+diary.tooltip_entry         = Idatzi hautatutako egunaren egunkari-sarrera (automatikoki gordetzen da)
+diary.default_name          = Egunkaria
+diary.label_selector        = E&gunkaria:
+diary.accessible_selector   = Egunkari aktiboa
+diary.btn_manage            = &Kudeatu...
+diary.btn_manage_tip        = Sortu, izena aldatu edo ezabatu egunkari-liburuak
+diary.manage_title          = Kudeatu egunkari-liburuak
+diary.manage_accessible_list= Egunkari-liburuak
+diary.btn_new_diary         = &Egunkari berria
+diary.btn_rename_diary      = &Izena aldatu
+diary.btn_delete_diary      = &Ezabatu
+diary.new_diary_title       = Egunkari berria
+diary.new_diary_label       = &Egunkariaren izena:
+diary.rename_diary_title    = Aldatu egunkariaren izena
+diary.rename_diary_label    = &Izen berria:
+diary.delete_confirm_title  = Ezabatu egunkaria
+diary.delete_confirm_msg    = "{name}" eta bere {n} sarrera guztiak ezabatu nahi dituzu? Ezin da desegin.
+diary.delete_confirm_last   = Ezin da bakarra den egunkaria ezabatu.
+diary.err_empty_name        = Mesedez, idatzi egunkariaren izena.
+diary.err_name_title        = Izena beharrezkoa da
+diary.btn_goto_date         = &Joan datara...
+diary.btn_goto_date_tip     = Ireki egutegia iraganeko edozein datara nabigatzeko
+diary.goto_title            = Joan datara
+diary.goto_label            = Hautatu &data bat irekitzeko (gaur edo lehenagokoa):
+diary.goto_accessible_cal   = Data-hautatzailea
+diary.goto_btn_go           = &Joan
+diary.goto_err_title        = Data baliogabea
+diary.goto_err_future       = Mesedez, hautatu gaur edo iraganeko data bat.
+
+# ── Bilaketa ──────────────────────────────────────────────────────────────────
+search.title                = Bilatu
+search.label_query          = &Bilatu:
+search.accessible_query     = Bilaketa-terminoa
+search.tooltip_query        = Idatzi testua oharretan, alarmetan eta egunkari-sarreretan bilatzeko
+search.btn_search           = &Bilatu
+search.accessible_results   = Bilaketa-emaitzak
+search.col_type             = Mota
+search.col_title            = Izenburua
+search.col_preview          = Aurrebista
+search.col_date             = Data
+search.type_note            = Oharra
+search.type_alarm           = Alarma
+search.type_diary           = Egunkaria
+search.results_count        = {n} emaitza aurkitu
+search.no_results           = Ez da emaitzarik aurkitu "{query}" terminoarentzat
+search.ctx_goto_diary       = Joan egunkari-sarrerara
+
+# ── Esportatu ─────────────────────────────────────────────────────────────────
+menu.export                 = &Esportatu...	Ctrl+E
+menu.export_help            = Esportatu egunkari-sarrerak edo oharrak Markdown fitxategietara
+export.title                = Esportatu
+export.source               = Iturria
+export.source_diary         = &Egunkaria
+export.source_notes         = &Oharrak
+export.format               = Esportazio-formatua
+export.fmt_per_entry        = Pelican argitalpen bat &sarrera bakoitzeko
+export.fmt_per_week         = Pelican argitalpen bat &aste bakoitzeko
+export.fmt_per_month        = Pelican argitalpen bat &hilabete bakoitzeko
+export.fmt_single_md        = &Markdown dokumentu bakarra (Pelican goiburua gabe)
+export.metadata             = Pelican metadatuak
+export.meta_lang            = Hizkuntzaren &kodea:
+export.meta_lang_tip        = ISO 639-1 hizkuntza-kodea Lang eremurako (adib. en, eu, es)
+export.meta_tags            = &Etiketak:
+export.meta_tags_tip        = Komaz bereizitako etiketa zerrenda Pelicaneko Tags eremurako
+export.meta_series          = &Seriaren izena:
+export.meta_series_tip      = Pelican serie-izen aukerakoa; utzi hutsik serie eremuak ez sartzeko
+export.output_label         = &Irteera:
+export.output_tip           = Karpeta fitxategi anitzeko esportazioetarako edo bide bakarra dokumentu bakarreko
+export.btn_browse           = A&rkatu...
+export.btn_export           = &Esportatu
+export.browse_folder        = Hautatu esportazio-karpeta
+export.browse_file          = Gorde Markdown fitxategia
+export.template_chk         = Erabili &txantiloi pertsonalizatua
+export.template_tip         = Txantiloi aldagaiak: {title} {date} {entry_date} {export_time} {modified} {tags} {summary} {description} {series} {series_index} {trans_id} {lang} {content} {diary_name} {year} {month} {day}
+export.template_browse_title= Ireki txantiloi fitxategia
+export.template_default_btn = &Lehenetsita...
+export.template_save_title  = Gorde txantiloi lehenetsia
+export.err_title            = Esportazio errorea
+export.err_no_output        = Mesedez, hautatu irteera-kokapena.
+export.err_template_read    = Ezin da txantiloi fitxategia irakurri: {error}
+export.err_failed           = Esportazioak huts egin du: {error}
+export.success_title        = Esportazioa osatu da
+export.success_files        = {count} fitxategi esportatu dira arrakastaz.
+export.success_single       = {count} elementu esportatu dira arrakastaz fitxategi bakarrera.
+export.all_diaries          = Egunkari guztiak
+export.fmt_month_title      = {year}ko {month_lc}
+export.fmt_week_same        = {year}ko {month_lc}ren {d1}–{d2}
+export.fmt_week_cross       = {year}ko {m1_lc}ren {d1}–{m2_lc}ren {d2}
+export.fmt_week_cross_year  = {y1}ko {m1_lc}ren {d1}–{y2}ko {m2_lc}ren {d2}
+
+# ── Segurtasun kopia ──────────────────────────────────────────────────────────
+menu.backup                 = &Segurtasun kopia...	Ctrl+Shift+B
+menu.backup_help            = Sortu taglibro datu-basearen eta ezarpenen segurtasun kopia bat
+backup.title                = Taglibro-segurtasun kopia
+backup.info                 = Egunkari-sarrera, ohar, alarma eta ezarpen guztien segurtasun kopia txifratua sortzen du.
+backup.mode_local           = &Tokiko fitxategia
+backup.mode_ftp             = &FTP kargatzea
+backup.local_label          = &Gorde hemen:
+backup.local_tip            = Segurtasun kopia fitxategia gordeko den karpeta
+backup.local_browse         = A&rkatu...
+backup.local_browse_title   = Hautatu segurtasun kopiarako karpeta
+backup.ftp_host             = &Host:
+backup.ftp_port             = &Portua:
+backup.ftp_user             = &Erabiltzaile-izena:
+backup.ftp_password         = &Pasahitza:
+backup.ftp_path             = Urruneko &bidea:
+backup.ftp_tls              = &Konexio segurua (FTPS)
+backup.ftp_remember         = Gogoratu &FTP ezarpenak
+backup.ftp_pass_note        = FTP pasahitza settings.ini fitxategian txifratu gabe gordetzen da
+backup.btn_backup           = &Sortu segurtasun kopia
+backup.err_title            = Segurtasun kopia huts egin du
+backup.err_no_output        = Mesedez, hautatu helmuga-karpeta bat.
+backup.err_no_host          = Mesedez, sartu FTP host bat.
+backup.err_no_user          = Mesedez, sartu FTP erabiltzaile-izena.
+backup.err_ftp              = FTP errorea: {error}
+backup.err_write            = Ezin da segurtasun kopia fitxategia idatzi: {error}
+backup.success_title        = Segurtasun kopia osatu da
+backup.success_local        = Segurtasun kopia gordeta hemen:\n{path}
+backup.success_ftp          = Segurtasun kopia kargatuta {host} ({path})
+
+# ── Lasterbideak ─────────────────────────────────────────────────────────────
+menu.shortcuts              = Pertsonalizatu &lasterbideak...
+menu.shortcuts_help         = Editatu menu-ekintzetarako tekla-lasterbideak
+shortcuts.title             = Pertsonalizatu lasterbideak
+shortcuts.col_action        = Ekintza
+shortcuts.col_shortcut      = Lasterbidea
+shortcuts.accessible_list   = Tekla-lasterbideak
+shortcuts.btn_reassign      = &Berrirailkatu...
+shortcuts.btn_reset         = Lehener&atu
+shortcuts.conflict_title    = Lasterbide-gatazka
+shortcuts.conflict_msg      = {shortcut} dagoeneko "{action}" ekintzari esleituta dago. Hala ere erabili?
+shortcuts.capture_title     = Lasterbide berria
+shortcuts.capture_prompt    = Sakatu tekla-konbinazio berria honetan:
+shortcuts.capture_hint      = Sakatu tekla-konbinazioa (Ctrl, Alt edo Shift + tekla). Enter berretzeko. Esc bertan behera uzteko.
+
+# ── Datuen lokalizazioa ───────────────────────────────────────────────────────
+date.month.1                = Urtarril
+date.month.2                = Otsail
+date.month.3                = Martxo
+date.month.4                = Apiril
+date.month.5                = Maiatz
+date.month.6                = Ekain
+date.month.7                = Uztail
+date.month.8                = Abuztu
+date.month.9                = Irail
+date.month.10               = Urri
+date.month.11               = Azaro
+date.month.12               = Abendu
+date.weekday.0              = Astelehen
+date.weekday.1              = Astearte
+date.weekday.2              = Asteazken
+date.weekday.3              = Ostegun
+date.weekday.4              = Ostiral
+date.weekday.5              = Larunbat
+date.weekday.6              = Igande

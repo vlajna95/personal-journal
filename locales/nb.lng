@@ -1,0 +1,327 @@
+# Personal Journal — Norsk (Bokmål)
+lang.name = Norsk (Bokmål)
+lang.code = nb
+
+# ── Program ───────────────────────────────────────────────────────────────────
+app.title                   = Personlig Dagbok
+app.err_title               = Feil
+app.err_db_init_failed      = Klarte ikke å initialisere dagbokdatabasen.
+app.err_auth_failed_title   = Autentisering mislyktes
+app.err_auth_failed         = Feil passord. {remaining} forsøk gjenstår.
+app.err_locked_out_title    = Tilgang blokkert
+app.err_locked_out          = For mange mislykkede forsøk. Programmet avsluttes.
+
+# ── Menylinje ─────────────────────────────────────────────────────────────────
+menu.file                   = &Fil
+menu.notes                  = &Notater
+menu.diaries                = &Dagbøker
+menu.new_note               = &Nytt notat	Ctrl+N
+menu.new_note_help          = Opprett et nytt notat i dagboken
+menu.new_diary              = &Ny dagbok...	Ctrl+D
+menu.new_diary_help         = Opprett en ny navngitt dagbok
+menu.goto_date              = &Gå til dato...	Ctrl+G
+menu.goto_date_help         = Åpne en kalender for å navigere til en dagbokoppføring
+menu.manage_diaries         = &Administrer dagbøker...	Ctrl+Shift+D
+menu.manage_diaries_help    = Opprett, gi nytt navn til eller slett dagbøker
+menu.exit                   = &Avslutt	Alt+F4
+menu.exit_help              = Avslutt programmet
+menu.language               = &Språk
+
+# ── Hovedvindu ────────────────────────────────────────────────────────────────
+frame.accessible_splitter   = Dagboksdeler
+frame.label_dates           = &Datoer med notater:
+frame.accessible_dates      = Datoer med notater
+frame.col_date              = Dato
+frame.col_notes_count       = Notater
+frame.label_notes           = &Notater for valgt dato:
+frame.accessible_notes      = Notatliste
+frame.col_subject           = Emne
+frame.col_time              = Tid
+frame.label_content         = Notatets &innhold:
+frame.accessible_preview    = Forhåndsvisning av notatinnhold
+frame.tooltip_preview       = Innholdet i det valgte notatet (skrivebeskyttet)
+frame.status_count          = {n} dato(er) med notater
+
+# ── Språkmeny ─────────────────────────────────────────────────────────────────
+lang.changed_title          = Språk endret
+lang.changed_msg            = Språket er endret. Vinduet lastes inn på nytt.
+
+# ── Passordkonfigurasjonsdialogg (første oppstart) ───────────────────────────
+setup.title                 = Angi hovedpassord
+setup.intro                 = Velkommen til Personlig Dagbok.\nVelg et hovedpassord for å kryptere dagboken din.
+setup.label_password        = &Passord:
+setup.label_confirm         = Be&kreft:
+setup.accessible_password   = Passord
+setup.accessible_confirm    = Passordbekreftelse
+setup.tooltip_password      = Skriv inn ditt nye hovedpassord
+setup.tooltip_confirm       = Skriv inn passordet igjen for å bekrefte
+setup.btn_create            = &Opprett dagbok
+setup.err_validation_title  = Valideringsfeil
+setup.err_too_short         = Passordet må være minst 4 tegn langt.
+setup.err_no_match          = Passordene stemmer ikke overens. Prøv igjen.
+
+# ── Opplåsingsdialogg ─────────────────────────────────────────────────────────
+unlock.title                = Lås opp Personlig Dagbok
+unlock.prompt               = Skriv inn hovedpassordet ditt for å låse opp dagboken:
+unlock.label_password       = &Passord:
+unlock.accessible_password  = Passord
+unlock.tooltip_password     = Skriv inn hovedpassordet ditt
+unlock.btn_unlock           = &Lås opp
+unlock.btn_exit             = &Avslutt
+unlock.err_required_title   = Obligatorisk
+unlock.err_enter_password   = Skriv inn passordet ditt.
+
+# ── Nytt notat-dialogboks ─────────────────────────────────────────────────────
+note.title                  = Nytt notat
+note.label_date             = Dato: {date}
+note.label_subject          = &Emne:
+note.label_note             = &Notat:
+note.accessible_subject     = Emne
+note.accessible_note        = Notatetekst
+note.tooltip_subject        = Skriv inn et kort emne for dette notatet
+note.tooltip_note           = Skriv dagboksposten din her
+note.btn_save               = &Lagre notat
+note.err_required_title     = Obligatorisk
+note.err_enter_subject      = Skriv inn et emne for notatet.
+note.err_enter_content      = Skriv inn tekst for notatet.
+
+# ── Kontekstmeny / rediger / slett notat ─────────────────────────────────────
+note.ctx_edit               = Rediger notat
+note.ctx_delete             = Slett notat
+note.edit_title             = Rediger notat
+note.edit_btn_save          = &Lagre endringer
+note.delete_confirm_title   = Slett notat
+note.delete_confirm_msg     = Er du sikker på at du vil slette "{subject}"? Dette kan ikke angres.
+
+# ── Låseskjerm ────────────────────────────────────────────────────────────────
+menu.search                 = &Søk	Ctrl+F
+menu.search_help            = Søk i notater, alarmer og dagbokposter
+menu.lock                   = &Lås dagbok	Ctrl+Alt+L
+menu.lock_help              = Lås dagboken og skjul innholdet
+menu.tray                   = &Minimer til systemstatusfeltet	Alt+Shift+F4
+menu.tray_help              = Lås og skjul dagboken i systemstatusfeltet
+lock.status                 = Låst
+lock.message                = Dagboken er låst.
+lock.btn_unlock             = Lås opp dagbok
+
+# ── Systemstatusfelt ──────────────────────────────────────────────────────────
+tray.tooltip                = Personlig Dagbok
+tray.restore                = Gjenopprett
+tray.quit                   = Avslutt
+
+# ── Faner ─────────────────────────────────────────────────────────────────────
+tab.notes                   = Notater
+tab.alarms                  = Alarmer
+tab.diary                   = Dagbøker
+
+# ── Alarmemeny ────────────────────────────────────────────────────────────────
+menu.alarms                 = &Alarmer
+menu.new_alarm              = &Ny alarm	Ctrl+Shift+N
+menu.new_alarm_help         = Opprett en ny alarm
+
+# ── Alarmliste (hovedvindu) ───────────────────────────────────────────────────
+frame.label_alarms          = &Alarmer:
+frame.accessible_alarms     = Alarmliste
+frame.col_alarm_subject     = Emne
+frame.col_alarm_note        = Notat
+frame.col_alarm_date        = Dato
+frame.col_alarm_time        = Tid
+
+# ── Ny / rediger alarm-dialogboks ─────────────────────────────────────────────
+alarm.new_title             = Ny alarm
+alarm.edit_title            = Rediger alarm
+alarm.label_subject         = &Emne:
+alarm.label_note            = &Notat:
+alarm.label_datetime        = &Dato og tid:
+alarm.accessible_subject    = Emne
+alarm.accessible_note       = Alarmnotat
+alarm.accessible_date       = Alarmdato
+alarm.accessible_hour       = Time
+alarm.accessible_minute     = Minutt
+alarm.tooltip_subject       = Skriv inn et kort emne for denne alarmen
+alarm.tooltip_note          = Skriv inn et valgfritt notat for denne alarmen
+alarm.btn_save              = &Lagre alarm
+alarm.edit_btn_save         = &Lagre endringer
+alarm.err_required_title    = Obligatorisk
+alarm.err_enter_subject     = Skriv inn et emne for alarmen.
+alarm.err_past_datetime     = Alarmens dato og tid må være i fremtiden.
+
+# ── Alarm utløst-dialogboks ───────────────────────────────────────────────────
+alarm.fired_title           = Alarm
+alarm.fired_locked_msg      = Det er en ventende alarm.
+alarm.btn_snooze            = &Utsett (Ctrl+Alt+F1)
+alarm.btn_stop              = &Stopp (Ctrl+Alt+F2)
+alarm.missed_title          = Tapte alarmer
+alarm.missed_msg            = {n} alarm(er) var planlagt mens programmet var lukket:
+alarm.missed_list_name      = Liste over tapte alarmer
+alarm.missed_col_time       = Planlagt tid
+alarm.missed_col_subject    = Emne
+alarm.missed_snooze         = &Utsett alle
+alarm.missed_dismiss        = &Avvis alle
+
+# ── Kontekstmeny / slett alarm ────────────────────────────────────────────────
+alarm.ctx_edit              = Rediger alarm
+alarm.ctx_delete            = Slett alarm
+alarm.delete_confirm_title  = Slett alarm
+alarm.delete_confirm_msg    = Er du sikker på at du vil slette "{subject}"? Dette kan ikke angres.
+
+# ── Dagbokfanen ───────────────────────────────────────────────────────────────
+diary.label_tree            = &Innlegg:
+diary.accessible_tree       = Dagbokinnlegg
+diary.label_entry           = &Dagbokinnlegg:
+diary.accessible_entry      = Dagbokinnlegg
+diary.tooltip_entry         = Skriv dagbokinnlegget ditt for den valgte dagen (lagres automatisk)
+diary.default_name          = Dagbok
+diary.label_selector        = Da&gbok:
+diary.accessible_selector   = Aktiv dagbok
+diary.btn_manage            = &Administrer...
+diary.btn_manage_tip        = Opprett, gi nytt navn til eller slett dagbøker
+diary.manage_title          = Administrer dagbøker
+diary.manage_accessible_list= Dagbøker
+diary.btn_new_diary         = &Ny dagbok
+diary.btn_rename_diary      = &Gi nytt navn
+diary.btn_delete_diary      = &Slett
+diary.new_diary_title       = Ny dagbok
+diary.new_diary_label       = &Dagbokens navn:
+diary.rename_diary_title    = Gi nytt navn til dagbok
+diary.rename_diary_label    = &Nytt navn:
+diary.delete_confirm_title  = Slett dagbok
+diary.delete_confirm_msg    = Slette "{name}" og alle {n} innlegg? Dette kan ikke angres.
+diary.delete_confirm_last   = Kan ikke slette den eneste dagboken.
+diary.err_empty_name        = Skriv inn et navn for dagboken.
+diary.err_name_title        = Navn kreves
+diary.btn_goto_date         = &Gå til dato...
+diary.btn_goto_date_tip     = Åpne en kalender for å navigere til en hvilken som helst tidligere dato
+diary.goto_title            = Gå til dato
+diary.goto_label            = &Velg en dato å åpne (i dag eller tidligere):
+diary.goto_accessible_cal   = Datovelger
+diary.goto_btn_go           = &Gå
+diary.goto_err_title        = Ugyldig dato
+diary.goto_err_future       = Velg dagens dato eller en tidligere dato.
+
+# ── Søk ───────────────────────────────────────────────────────────────────────
+search.title                = Søk
+search.label_query          = &Søk:
+search.accessible_query     = Søketerm
+search.tooltip_query        = Skriv inn tekst for å søke i notater, alarmer og dagbokinnlegg
+search.btn_search           = &Søk
+search.accessible_results   = Søkeresultater
+search.col_type             = Type
+search.col_title            = Tittel
+search.col_preview          = Forhåndsvisning
+search.col_date             = Dato
+search.type_note            = Notat
+search.type_alarm           = Alarm
+search.type_diary           = Dagbok
+search.results_count        = {n} resultat(er) funnet
+search.no_results           = Ingen resultater funnet for "{query}"
+search.ctx_goto_diary       = Gå til dagbokinnlegg
+
+# ── Eksporter ─────────────────────────────────────────────────────────────────
+menu.export                 = &Eksporter...	Ctrl+E
+menu.export_help            = Eksporter dagbokinnlegg eller notater til Markdown-filer
+export.title                = Eksporter
+export.source               = Kilde
+export.source_diary         = &Dagbok
+export.source_notes         = &Notater
+export.format               = Eksportformat
+export.fmt_per_entry        = Et Pelican-innlegg per &innlegg
+export.fmt_per_week         = Et Pelican-innlegg per &uke
+export.fmt_per_month        = Et Pelican-innlegg per &måned
+export.fmt_single_md        = Enkelt &Markdown-dokument (uten Pelican-hode)
+export.metadata             = Pelican-metadata
+export.meta_lang            = &Språkkode:
+export.meta_lang_tip        = ISO 639-1 språkkode for Lang-feltet (f.eks. en, nb, sv)
+export.meta_tags            = &Tagger:
+export.meta_tags_tip        = Kommaseparert liste med tagger for Pelicanfeltet Tags
+export.meta_series          = &Serienavn:
+export.meta_series_tip      = Valgfritt Pelican-serienavn; la stå tomt for å utelate seriefelt
+export.output_label         = &Utdata:
+export.output_tip           = Mappe for eksport med flere filer eller sti for enkeltdokument
+export.btn_browse           = &Bla gjennom...
+export.btn_export           = &Eksporter
+export.browse_folder        = Velg eksportmappe
+export.browse_file          = Lagre Markdown-fil
+export.template_chk         = Bruk egendefinert &mal
+export.template_tip         = Malvariabler: {title} {date} {entry_date} {export_time} {modified} {tags} {summary} {description} {series} {series_index} {trans_id} {lang} {content} {diary_name} {year} {month} {day}
+export.template_browse_title= Åpne malfil
+export.template_default_btn = &Standard...
+export.template_save_title  = Lagre standardmal
+export.err_title            = Eksportfeil
+export.err_no_output        = Velg en utdataposisjon.
+export.err_template_read    = Kan ikke lese malfilen: {error}
+export.err_failed           = Eksport mislyktes: {error}
+export.success_title        = Eksport fullført
+export.success_files        = {count} fil(er) eksportert.
+export.success_single       = {count} element(er) eksportert til én enkelt fil.
+export.all_diaries          = Alle dagbøker
+export.fmt_month_title      = {month} {year}
+export.fmt_week_same        = {d1}–{d2}. {month_lc} {year}
+export.fmt_week_cross       = {d1}. {m1_lc}–{d2}. {m2_lc} {year}
+export.fmt_week_cross_year  = {d1}. {m1_lc} {y1}–{d2}. {m2_lc} {y2}
+
+# ── Sikkerhetskopiering ───────────────────────────────────────────────────────
+menu.backup                 = &Sikkerhetskopi...	Ctrl+Shift+B
+menu.backup_help            = Opprett en sikkerhetskopi av dagbokdatabasen og innstillingene
+backup.title                = Sikkerhetskopier dagbok
+backup.info                 = Oppretter en kryptert sikkerhetskopi av alle dagbokinnlegg, notater, alarmer og innstillinger.
+backup.mode_local           = &Lokal fil
+backup.mode_ftp             = &FTP-opplasting
+backup.local_label          = &Lagre i:
+backup.local_tip            = Mappe der sikkerhetskopifilen lagres
+backup.local_browse         = &Bla gjennom...
+backup.local_browse_title   = Velg mappe for sikkerhetskopi
+backup.ftp_host             = &Vert:
+backup.ftp_port             = &Port:
+backup.ftp_user             = &Brukernavn:
+backup.ftp_password         = &Passord:
+backup.ftp_path             = &Ekstern sti:
+backup.ftp_tls              = &Sikker tilkobling (FTPS)
+backup.ftp_remember         = &Husk FTP-innstillinger
+backup.ftp_pass_note        = FTP-passord lagres ukryptert i settings.ini
+backup.btn_backup           = &Opprett sikkerhetskopi
+backup.err_title            = Sikkerhetskopiering mislyktes
+backup.err_no_output        = Velg en målmappe.
+backup.err_no_host          = Skriv inn en FTP-vert.
+backup.err_no_user          = Skriv inn et FTP-brukernavn.
+backup.err_ftp              = FTP-feil: {error}
+backup.err_write            = Kunne ikke skrive sikkerhetskopifilen: {error}
+backup.success_title        = Sikkerhetskopiering fullført
+backup.success_local        = Sikkerhetskopi lagret i:\n{path}
+backup.success_ftp          = Sikkerhetskopi lastet opp til {host} ({path})
+
+# ── Hurtigtaster ─────────────────────────────────────────────────────────────
+menu.shortcuts              = Tilpass &hurtigtaster...
+menu.shortcuts_help         = Rediger tastatursnarveier for menyhandlinger
+shortcuts.title             = Tilpass hurtigtaster
+shortcuts.col_action        = Handling
+shortcuts.col_shortcut      = Hurtigtast
+shortcuts.accessible_list   = Tastatursnarveier
+shortcuts.btn_reassign      = &Tilordne på nytt...
+shortcuts.btn_reset         = Tilbakestill til &standard
+shortcuts.conflict_title    = Hurtigtastkonflikt
+shortcuts.conflict_msg      = {shortcut} er allerede tilordnet "{action}". Bruk likevel?
+shortcuts.capture_title     = Ny hurtigtast
+shortcuts.capture_prompt    = Trykk den nye tastekombinasjonen for:
+shortcuts.capture_hint      = Trykk en tastekombinasjon (Ctrl, Alt eller Skift + tast). Enter for å bekrefte. Esc for å avbryte.
+
+# ── Dato-lokalisering ─────────────────────────────────────────────────────────
+date.month.1                = Januar
+date.month.2                = Februar
+date.month.3                = Mars
+date.month.4                = April
+date.month.5                = Mai
+date.month.6                = Juni
+date.month.7                = Juli
+date.month.8                = August
+date.month.9                = September
+date.month.10               = Oktober
+date.month.11               = November
+date.month.12               = Desember
+date.weekday.0              = Mandag
+date.weekday.1              = Tirsdag
+date.weekday.2              = Onsdag
+date.weekday.3              = Torsdag
+date.weekday.4              = Fredag
+date.weekday.5              = Lørdag
+date.weekday.6              = Søndag
