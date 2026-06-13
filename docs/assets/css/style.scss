@@ -1,12 +1,13 @@
 ---
 ---
 
-// Make key-reference tables more compact
-.site-content table td:first-child code {
+@import "{{ site.theme }}";
+
+// Keep first-column code cells from wrapping in key-reference tables
+table td:first-child code {
   white-space: nowrap;
 }
 
-// Warning / tip callouts (just-the-docs v0.10+ uses these classes)
 .warning {
   border-left: 4px solid #e74c3c;
   background: #fdf2f2;

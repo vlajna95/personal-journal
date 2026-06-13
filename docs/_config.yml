@@ -3,26 +3,11 @@ description: A screen-reader accessible, password-protected personal journal for
 baseurl: "/personal-journal"
 url: "https://vlajna95.github.io"
 
-remote_theme: just-the-docs/just-the-docs@v0.10.0
+theme: jekyll-theme-merlot
 
 plugins:
-  - jekyll-remote-theme
   - jekyll-seo-tag
 
-# just-the-docs settings
-color_scheme: light
-search_enabled: true
-heading_anchors: true
-
-aux_links:
-  "Download latest release":
-    - "https://github.com/vlajna95/personal-journal/releases/latest"
-  "View on GitHub":
-    - "https://github.com/vlajna95/personal-journal"
-
-footer_content: "© 2026 Danijela Popović. Distributed under a proprietary licence."
-
-# Exclude build artefacts
 exclude:
   - Gemfile
   - Gemfile.lock
